@@ -1,16 +1,20 @@
-import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-import WebRouter from "./components/router/WebRouter";
-import Header from "./components/pages/Header/Header";
-import Footer from "./components/pages/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+// Page
+import HomePage from "./page/HomePage/HomePage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <WebRouter/>
-      <Footer/>
+      {/* <Header/> */}
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+      </Routes>
+      {/* <Footer/> */}
     </div>
   );
 }
