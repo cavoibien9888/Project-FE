@@ -48,7 +48,9 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3% 0;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #footer_title {
@@ -60,8 +62,50 @@ ul li {
 }
 
 .footer_title-info {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;    
     color: #000;
     text-transform: uppercase;
+}
+
+#footer_info {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_info-blk1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer_info-blk1 {
+    width: 100%;
+    align-items: start;
+}
+
+.blk1_img-logo {
+    width: 11rem;
+    margin-bottom: 10px;
+}
+
+#name_eic-blk {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+#name_eic-title {
+    font-size: 22px;
+}
+
+#name_eic {
+    font-size: 22px;
+    font-weight: 600;
 }
