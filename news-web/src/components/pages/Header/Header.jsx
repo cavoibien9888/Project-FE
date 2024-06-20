@@ -3,7 +3,7 @@ import React from 'react';
 // pages & file
 import '../../css/header.css';
 import LogoImage from '../../images/tintuc.png';
-import MenuRouter from '../../router/MenuRouter';
+import MenuHeaderRouter from '../../router/MenuRouter';
 
 function Header() {
   return (
@@ -11,8 +11,8 @@ function Header() {
       <div id='header_coSe'>
         <div id='header_coSe-blk'>
           <div id='header_contacts'>
-            <p className='header-email'>fitNLU@gmail.com</p>
-            <p className='header-phone'>0379383465</p>
+            <p className='header-email header_contact-text'>fitNLU@gmail.com</p>
+            <p className='header-phone header_contact-text'>0379383465</p>
           </div>
           <div id='header_search'>
             <input type='search'/>
@@ -29,7 +29,7 @@ function Header() {
       </div>
       <div id='header_nav'>
         <ul id='header_list'>
-          {MenuRouter.map((item) => (
+          {MenuHeaderRouter.map((item) => (
             <li key={item} className='header_list-item'>
               <a href={item.path} className={'header_title-text' + (item.addClass ? item.addClass : '')}>
                 {item.icon && <i className={item.icon}></i>}

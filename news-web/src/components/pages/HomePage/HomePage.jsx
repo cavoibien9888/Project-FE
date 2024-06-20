@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../css/homePage.css';
 
 function HomePage() {
   return (
-    <div>
-    Hi
+    <div className="container">
+      hi
     </div>
   )
 }
