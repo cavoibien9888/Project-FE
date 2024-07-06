@@ -12,7 +12,7 @@ export interface NewsDetail {
     id: string;
     title: string;
     author: string;
-    publishDate: Date;
+    publishDate: string;
     thumbnail: string;
     paragraphs: Paragraph[];
     category: Category;
