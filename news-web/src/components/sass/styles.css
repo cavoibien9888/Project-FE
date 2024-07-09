@@ -205,7 +205,7 @@ ul li {
 .footer_title-text {
   color: #4b4b4b;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .footer_title-info {
@@ -288,9 +288,135 @@ ul li {
 }
 
 .blk2 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 73%;
+  margin: 10px 0;
+  column-gap: 25px;
+}
+.blk2_news-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  background-color: #eaeaea;
+}
+.blk2_section {
+  width: 100%;
+  height: 100%;
+}
+.blk2_section-8 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  overflow: hidden;
+  padding: 8px;
+}
+.blk2_section-img {
+  width: 15.5rem;
+  height: 6rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.blk2_section-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 18.5px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.blk2-img {
+  width: 100%;
+  height: 100%;
+}
+.blk2-title {
+  text-align: start;
+}
+.blk2_vertical-line {
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px solid rgba(200, 200, 200, 0.7254901961);
+}
+.blk2_latest-news {
+  width: 100%;
+  height: 100%;
+  padding-right: 2%;
+}
+.blk2_lN {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 24.2rem;
+}
+.blk2_lN-img {
+  width: 100%;
+  height: 100%;
+}
+.blk2_lN-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 10px;
+}
+.blk2_lN-content {
+  font-size: 18px;
+  color: #3f3f3f;
+}
+
+#home-media {
+  margin-top: 1.8rem;
+}
+
+.blk3_media {
   width: 100%;
   height: auto;
-  margin: 10px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #d3d9e5;
+  column-gap: 30px;
+}
+.blk3_media-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #00217b;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-left: 10px #c6131c solid;
+  border-right: 5px #c6131c solid;
+}
+.blk3_media-content {
+  background-color: #e6ebf0;
+}
+.blk3_media-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 25px;
+}
+.blk3_media-item {
+  font-size: 18px;
+  color: #ed1b24;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */
