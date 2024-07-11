@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './components/sass/styles.css';
 
 import WebRouter from "./components/router/WebRouter";
 import Header from "./components/pages/Header/Header";
