@@ -8,7 +8,7 @@ export interface News{
     pubDate: Date;
     thumbnail: string | undefined;
 }
-export interface NewsDetail {
+export interface NewsContent {
     id: string;
     title: string;
     author: string;
@@ -31,4 +31,9 @@ export interface NewsLoading {
     news?: News;
     isLoading: boolean;
     cssImage?: React.CSSProperties;
+}
+export interface NewsItem {
+    id: number;
+    title: string;
+    content: string;
 }

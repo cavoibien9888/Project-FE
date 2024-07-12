@@ -1,6 +1,6 @@
-import {NewsDetail} from "../type/NewType";
+import {NewsContent} from "../type/NewType";
 import {Category} from "../define/Category";
-const newDetail: NewsDetail[] = [
+const newContent: NewsContent[] = [
     {
         id: 'A1',
         title: 'Quảng Trị tổ chức Hội nghị công bố Quy hoạch tỉnh thời kỳ 2021 - 2030',
@@ -323,3 +323,4 @@ const newDetail: NewsDetail[] = [
         ],
     }
 ]
+export default newContent;
