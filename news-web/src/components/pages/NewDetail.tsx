@@ -15,37 +15,40 @@ import { SlideshowLightbox } from 'lightbox.js-react';
 import 'lightbox.js-react/dist/index.css';
 import Stack from '@mui/material/Stack';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import {getNewsById} from "../service/NewService";
+import { getNewsById } from "../service/NewService";
 import SidebarNewDetail from "../sidebar/SidebarNewDetail";
-import {Image, Paragraph} from "../type/NewType";
-import {toCategoryName} from "../service/CateGoryService";
-import {formatDate} from "../service/TimeService";
+import { Image, Paragraph } from "../type/NewType";
+import { toCategoryName } from "../service/CateGoryService";
+import { formatDate } from "../service/TimeService";
+
 function NewDetail() {
     const isMobile = useMediaQuery((theme: Theme) =>
         theme.breakpoints.down('sm'),
     );
     const { id } = useParams();
-    if (!id) {
-        return <Navigate to={'/404'} />;
-    }
-    const getLastNum = 'A' + id.substring(id.length - 1, id.length);
 
-    const detail = getNewsById(getLastNum);
+    const getLastNum = id ? 'A' + id.substring(id.length - 1, id.length) : '';
+
+    const detail = getLastNum ? getNewsById(getLastNum) : undefined;
 
     useEffect(() => {
-        document.title = detail?.title || '';
-    }, []);
+        if (detail) {
+            document.title = detail?.title || '';
+        }
+    }, [detail]);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        if (id) {
+            window.scrollTo(0, 0);
+        }
     }, [id]);
 
-    if (!detail) {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    if (!id || !detail) {
         return <Navigate to={'/404'} />;
     }
 
-
-    const [isOpen, setIsOpen] = useState<boolean>(false);
     const handleShowImage = () => {
         setIsOpen(true);
     };

@@ -1,8 +1,7 @@
-const LINE_CLAMP: number = 1;
 import React from 'react';
 import { TypographyProps } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
+const LINE_CLAMP: number = 1;
 interface LineClampTypographyProps extends TypographyProps {
   lineClamp?: number;
 }
