@@ -10,18 +10,21 @@ import {
     Theme,
     useMediaQuery,
 } from '@mui/material';
-import SidebarNewDetail from 'src/components/sidebar/SidebarNewDetail';
 import Typography from '@mui/material/Typography';
-import { Image, Paragraph } from 'src/components/type/NewType';
 import { SlideshowLightbox } from 'lightbox.js-react';
 import 'lightbox.js-react/dist/index.css';
 import Stack from '@mui/material/Stack';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import {getNewsById} from "../service/NewService";
+import SidebarNewDetail from "../sidebar/SidebarNewDetail";
+import {Image, Paragraph} from "../type/NewType";
+import {toCategoryName} from "../service/CateGoryService";
+import {formatDate} from "../service/TimeService";
 function NewDetail() {
     const isMobile = useMediaQuery((theme: Theme) =>
         theme.breakpoints.down('sm'),
     );
-    const { id } = useParams<{ id: string }>();
+    const { id } = useParams();
     if (!id) {
         return <Navigate to={'/404'} />;
     }

@@ -5,7 +5,7 @@ const newContent: NewsContent[] = [
         id: 'A1',
         title: 'Quảng Trị tổ chức Hội nghị công bố Quy hoạch tỉnh thời kỳ 2021 - 2030',
         author: 'N/A',
-        publishDate: 'Fri, 06 Jul 2024 17:00:00 +07',
+        publishDate: new Date(Date.parse('Tue, 28 May 2024 12:42:00 +07')),
         thumbnail:'Nguyên Lý (TTXVN)',
         category: Category.THOI_SU,
         paragraphs: [
@@ -48,7 +48,7 @@ const newContent: NewsContent[] = [
         id: 'A2',
         title: 'Liệu Nga có thể dựa vào Ấn Độ để thúc đẩy nền kinh tế giữa xung đột với Ukraine?',
         author: 'Vũ Thanh/Báo Tin tức (Theo TASS/DW)',
-        publishDate: 'Thứ Bảy, 06/07/2024 20:19',
+        publishDate: new Date(Date.parse('Sat, 06 July 2024 12:42:00 +07')),
         thumbnail: 'https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/86TcdCyeQdSwQkULe681Gw/files/2024/07/1365465.jpg',
         category: Category.THE_GIOI,
         paragraphs: [
@@ -118,7 +118,7 @@ const newContent: NewsContent[] = [
         id: 'A3',
         title: 'Bộ Quốc phòng bàn giao “Nhà đại đoàn kết” tại Cà Mau',
         author: 'V.T',
-        publishDate: 'Thứ Bảy, 06/07/2024 18:30',
+        publishDate: new Date(Date.parse('Sat, 06 July 2024 18:30:00 +07')),
         thumbnail: 'https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/m0xCDRsplmYeHmGctyfDUw/files/2024/07/bangiaonha.jpg',
         category: Category.VAN_HOA,
         paragraphs: [
@@ -146,7 +146,7 @@ const newContent: NewsContent[] = [
         id: 'A4',
         title: 'Hà Nội: Trên 90% phụ huynh có con vào lớp 1 đã đăng ký tuyển sinh trực tuyến',
         author: 'TTXVN/Báo Tin tức',
-        publishDate: 'Thứ Bảy, 06/07/2024 10:29',
+        publishDate: new Date(Date.parse('Sat, 06 July 2024 10:29:00 +07')),
         thumbnail: 'https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/DmtgOUlHWBO5POIHzIwr1A/files/2024/07/06/lop-1-06072024-02.jpg',
         category: Category.GIAO_DUC,
         paragraphs: [
@@ -162,7 +162,7 @@ const newContent: NewsContent[] = [
         id: 'A5',
         title: 'Hà Lan - Thổ Nhĩ Kỳ: Lợi thế nghiêng về sắc cam',
         author: 'Minh Đăng',
-        publishDate: 'Thứ Bảy, 06/07/2024 17:36',
+        publishDate: new Date(Date.parse('Sat, 06 July 2024 17:36:00 +07')),
         thumbnail: 'https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/EqV5H9rWgvy9oNikwkHLXA/files/06072024-halan-euro2024-2.jpg',
         category: Category.THE_THAO,
         paragraphs: [
@@ -223,7 +223,7 @@ const newContent: NewsContent[] = [
         id: 'A6',
         title: 'Chân dung tân Thủ tướng Anh sau chiến thắng lịch sử của Công đảng',
         author: 'Bảo Hà',
-        publishDate: 'Thứ Bảy, 06/07/2024 07:09',
+        publishDate: new Date(Date.parse('Sat, 06 July 2024 07:09:00 +07')),
         thumbnail: 'https://cdnthumb.baotintuc.vn/ha_w/600/https@@$$media.baotintuc.vn/Upload/XmrgEWAN1PzjhSWqVO54A/files/2024/07/0207/0607-starmer2.jpg',
         category: Category.HO_SO,
         paragraphs: [

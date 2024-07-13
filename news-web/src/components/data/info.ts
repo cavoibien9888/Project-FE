@@ -1,1 +1,1 @@
-export const SERVER_RSS: string = import.meta.env.VITE_SERVER_RSS;
+export const SERVER_RSS:string  = import.meta.env.VITE_SERVER_RSS;
