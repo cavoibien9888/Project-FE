@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../sass/styles.css';
 import DateTime from '../SecondaryPage/DateTime';
-import NewsPage from './NewsPage';
+// import NewsPage from './NewsPage';
 
 import img1 from '../../testimg/img2.jpg';
 import img2 from '../../testimg/img1.jpg';
