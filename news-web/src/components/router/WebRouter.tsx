@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // pages
 import HomePage from '../pages/PageMain/HomePage';
-import Error from '../pages/ErrorPage/Error';
+import Error from '../pages/PageMain/ErrorPage';
 import EventPage from '../pages/PageMain/EventPage';
 import SignIn from '../pages/UserPage/SignIn';
 

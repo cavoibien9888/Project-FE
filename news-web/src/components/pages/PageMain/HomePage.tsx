@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../sass/styles.css';
+import '../../sass/styles.scss';
 import DateTime from '../SecondaryPage/DateTime';
-import NewsPage from './NewsPage';
+// import NewsPage from './NewsPage';
 
-import img1 from '../../testimg/img2.jpg';
-import img2 from '../../testimg/img1.jpg';
+import img1 from '../../imgTest/img2.jpg';
+import img2 from '../../imgTest/img1.jpg';
 
 function HomePage() {
   return (

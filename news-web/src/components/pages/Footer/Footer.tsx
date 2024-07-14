@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../../sass/styles.css';
+import '../../sass/styles.scss';
 import LogoImage from '../../images/tintuc.png';
-import MenuFooterRouter from '../../router/MenuRouter';
+import MenuFooterRouter from '../../router/MenuItems';
 
 function Footer() {
   return (

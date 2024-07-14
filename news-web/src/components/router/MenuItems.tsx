@@ -1,7 +1,12 @@
-const MenuItems = [
-    {   path: '/',
-        icon: 'fa-solid fa-house'
-    },
+interface MenuItem {
+    path: string;
+    icon?: string;
+    text?: string;
+    addClass?: string; // Thêm thuộc tính addClass
+}
+
+const MenuItems: MenuItem[] = [
+    { path: '/', icon: 'fa-solid fa-house' },
     { path: '/thoi-su', text: 'Thời sự' },
     { path: '/the-gioi', text: 'Thế giới' },
     { path: '/kinh-te', text: 'Kinh tế' },
@@ -15,8 +20,7 @@ const MenuItems = [
     { path: '/bien-dao', text: 'Biển đảo' },
     { path: '/y-te', text: 'Y tế' },
     { path: '/dia-phuong', text: 'Địa phương' },
-    { path: '/y-te', text: 'Y tế' },
-    { icon: 'fa-solid fa-bars' }
+    { path: '/menu', icon: 'fa-solid fa-bars', text: 'Menu' }
 ];
 
 export default MenuItems;
