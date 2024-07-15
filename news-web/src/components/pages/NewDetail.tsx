@@ -26,7 +26,7 @@ function NewDetail() {
         theme.breakpoints.down('sm'),
     );
     const { id } = useParams();
-
+    console.log(id);
     const getLastNum = id ? 'A' + id.substring(id.length - 1, id.length) : '';
 
     const detail = getLastNum ? getNewsById(getLastNum) : undefined;

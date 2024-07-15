@@ -5,24 +5,16 @@ import './components/sass/styles.css';
 
 import {Route, Routes} from "react-router-dom";
 import NewDetail from "./components/pages/NewDetail";
-import HomePage from './components/pages/PageMain/HomePage';
+import HomePage from "./components/pages/PageMain/HomePage";
 
 
 function App() {
   return (
-
       <Routes>
-          {/* <Route path="/new/:id" element={<NewDetail />} /> */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage/>}>
+              <Route path="/new/:id" element={<NewDetail />} />
+          </Route>
       </Routes>
-
-    // <div className="App">
-
-    //   <Header/>
-    //   <WebRouter/>
-    //   <Footer/>
-
-    // </div>
 
   );
 }
