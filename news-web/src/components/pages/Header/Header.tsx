@@ -1,12 +1,11 @@
 import React from 'react';
 
 // pages & file
-import '../../sass/styles.scss';
+import '../../sass/header.scss';
 import LogoImage from '../../images/tintuc.png';
 import MenuHeaderRouter from '../../router/MenuItems';
 import PhoneImage from '../../images/phone.svg';
 import EmailImage from '../../images/email.svg';
-
 
 function Header() {
   return (
@@ -15,11 +14,11 @@ function Header() {
         <div id='header_coSe-blk'>
           <div id='header_contacts'>
             <div id='header_contacts-email'>
-              {/* <img src={EmailImage} alt="email icon" className='header_email-icon'/> */}
+              <img src={EmailImage} alt="email icon" className='header_email-icon'/>
               <p className='header_contact-text'>fitNLU@gmail.com</p>
             </div>
             <div id='header_contacts-phone'>
-              {/* <img src={PhoneImage} alt="phone icon" className='header_phone-icon'/> */}
+              <img src={PhoneImage} alt="phone icon" className='header_phone-icon'/>
               <p className='header_contact-text'>0379383465</p>
             </div>
           </div>
@@ -42,7 +41,7 @@ function Header() {
       </div>
       <div id='header_img'>
         <a href='/' >
-          {/* <img src={LogoImage} alt='Logo Web' className='header-logo'/> */}
+          <img src={LogoImage} alt='Logo Web' className='header-logo'/>
         </a>
       </div>
       <div id='header_nav'>
