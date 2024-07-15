@@ -26,7 +26,6 @@ export interface Image {
     capture: string;
     link: string;
 }
-
 export interface NewsLoading {
     news?: News;
     isLoading: boolean;
