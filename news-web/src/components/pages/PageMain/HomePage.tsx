@@ -72,11 +72,8 @@ function HomePage() {
                       Kinh tế 6 tháng: Tăng trưởng song hành ổn định kinh tế vĩ mô
                     </p>
                   </div>
-                </div>
-                
+                </div>                
               </div>
-              
-              
             </div>
             <div className="blk2_latest-news">
               <div className='blk2_lN'>
