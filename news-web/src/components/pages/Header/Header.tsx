@@ -1,12 +1,11 @@
 import React from 'react';
 
 // pages & file
-import '../../sass/styles.css';
+import '../../sass/header.scss';
 import LogoImage from '../../images/tintuc.png';
-import MenuHeaderRouter from '../../router/MenuRouter';
+import MenuHeaderRouter from '../../router/MenuItems';
 import PhoneImage from '../../images/phone.svg';
 import EmailImage from '../../images/email.svg';
-
 
 function Header() {
   return (
@@ -48,7 +47,7 @@ function Header() {
       <div id='header_nav'>
         <ul id='header_list'>
           {MenuHeaderRouter.map((item) => (
-            <li key={item} className='header_list-item'>
+            <li key={item.path} className='header_list-item'>
               <a href={item.path} className={'header_title-text' + (item.addClass ? item.addClass : '')}>
                 {item.icon && <i className={item.icon}></i>}
                 {!item.icon && item.text}

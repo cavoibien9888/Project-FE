@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../sass/styles.css';
+import '../../sass/styles.scss';
 import DateTime from '../SecondaryPage/DateTime';
 // import NewsPage from './NewsPage';
 
-import img1 from '../../testimg/img2.jpg';
-import img2 from '../../testimg/img1.jpg';
+import img1 from '../../imgTest/img2.jpg';
+import img2 from '../../imgTest/img1.jpg';
 
 function HomePage() {
   return (
@@ -72,11 +72,8 @@ function HomePage() {
                       Kinh tế 6 tháng: Tăng trưởng song hành ổn định kinh tế vĩ mô
                     </p>
                   </div>
-                </div>
-                
+                </div>                
               </div>
-              
-              
             </div>
             <div className="blk2_latest-news">
               <div className='blk2_lN'>

@@ -1,22 +1,26 @@
-
 import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
-import './components/sass/styles.css';
+import './components/sass/styles.scss';
 
-import {Route, Routes} from "react-router-dom";
-import NewDetail from "./components/pages/NewDetail";
-import HomePage from "./components/pages/PageMain/HomePage";
-
+import WebRouter from "./components/router/WebRouter";
+import Header from "./components/pages/Header/Header";
+import Footer from "./components/pages/Footer/Footer";
+// import { Route, Routes } from "react-router-dom";
+// import NewDetail from "./components/pages/NewDetail";
 
 function App() {
   return (
-      <Routes>
-          <Route path="/" element={<HomePage/>}>
-              <Route path="/new/:id" element={<NewDetail />} />
-          </Route>
-      </Routes>
-
+    <div className="App">
+      <Header/>
+      {/* <Routes> */}
+        {/* <Route path="/new/:id" element={<NewDetail />} /> */}
+        <WebRouter/>
+      {/* </Routes> */}
+      <Footer/>
+    </div>
   );
 }
 
 export default App;
+
