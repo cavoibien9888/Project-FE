@@ -4,10 +4,11 @@
 #header {
     @include fullScreen("fullWidth");
     // display: flex;
+    // flex-direction: column;
     background-color: $white;
-    flex-direction: column;
     &_coSe, &_img, &_nav {
         @include fullScreen("fullWidth");
+        @include paddingBar("paddingRL");
     }
     &_coSe {
         background-color:$white;
@@ -16,7 +17,6 @@
         &-blk {
             @include fullScreen("fullScreen");
             @include positionBlk("positionSbC");
-            @include paddingBar("paddingRL");
             padding-top: 10px;
             padding-bottom: 10px;
             flex-direction: row;
