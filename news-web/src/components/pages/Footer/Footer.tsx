@@ -1,5 +1,6 @@
 import React from 'react';
 
+// pages & file
 import '../../sass/footer.scss';
 import LogoImage from '../../images/tintuc.png';
 import MenuFooterRouter from '../../router/MenuItems';

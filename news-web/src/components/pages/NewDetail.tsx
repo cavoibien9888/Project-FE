@@ -182,4 +182,4 @@ function NewDetail() {
   )
 }
 
-export default NewDetail
+export default NewDetail;
