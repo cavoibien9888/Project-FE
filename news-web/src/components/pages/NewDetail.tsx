@@ -61,13 +61,12 @@ function NewDetail() {
         });
 
     return (
-        <Container>
+        <Container sx={{margin: '0 auto', padding: '0'}}>
             <Grid
-                // sx={{ position: isMobile ? 'relative' : 'static' }}
                 container
-                spacing={3}
+                spacing={5}
             >
-                <Grid item md={7} xs={12}>
+                <Grid item md={8} xs={12}>
                     <Stack
                         sx={{ py: 3 }}
                         // gap={isMobile ? 1 : 2}
