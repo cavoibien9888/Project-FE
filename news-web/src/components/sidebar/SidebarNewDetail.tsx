@@ -33,8 +33,8 @@ function SidebarNewDetail({ category }:{ category:Category }) {
     }, []);
     return (
         <Box sx={style}>
-            <Typography gutterBottom variant={'h3'}>
-                Các bài báo liên quan
+            <Typography gutterBottom variant={'h6'} align={'left'} sx={{ backgroundColor: '#D21D21', color: 'white'}} >
+                Tin cùng chuyên mục
             </Typography>
             <Stack sx={{ position: 'static' }} spacing={3}>
                 {newsRelated.slice(0, 3).map((news) => (
