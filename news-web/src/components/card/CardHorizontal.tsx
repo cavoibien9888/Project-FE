@@ -31,18 +31,9 @@ function CardHorizontal({ news, isLoading = false }: NewsLoading) {
                             {isLoading ? (
                                 <Skeleton width="100%" />
                             ) : (
-                                <ClampedTypography lineClamp={3} variant="h5" component="h3">
+                                <ClampedTypography lineClamp={4} variant="body1" component="p">
                                     {news?.title}
                                 </ClampedTypography>
-                            )}
-                            {isLoading ? (
-                                <Skeleton width="100%" />
-                            ) : (
-                                news?.pubDate && (
-                                    <ClampedTypography lineClamp={3} variant="caption">
-                                        {timeAgo(news.pubDate)}
-                                    </ClampedTypography>
-                                )
                             )}
                             {isLoading ? (
                                 <Skeleton width="100%" />

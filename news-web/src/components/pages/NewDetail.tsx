@@ -101,9 +101,9 @@ function NewDetail() {
                             animateThumbnails={true}
                         />
                     </Box>
-                    {/*<Typography gutterBottom component={'h1'} variant={isMobile ? 'h3' : 'h2'}>*/}
-                    {/*    {detail.title}*/}
-                    {/*</Typography>*/}
+                    <Typography gutterBottom component={'h1'} sx={{fontSize: '2rem'}}>
+                        {detail.title}
+                    </Typography>
                     <Typography gutterBottom align={'right'} variant={'subtitle1'}>
                         {`Tác giả ${detail.author}`}
                     </Typography>
