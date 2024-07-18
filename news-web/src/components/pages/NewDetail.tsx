@@ -61,13 +61,12 @@ function NewDetail() {
         });
 
     return (
-        <Container>
+        <Container sx={{margin: '0 auto', padding: '0'}}>
             <Grid
-                // sx={{ position: isMobile ? 'relative' : 'static' }}
                 container
-                spacing={3}
+                spacing={5}
             >
-                <Grid item md={7} xs={12}>
+                <Grid item md={8} xs={12}>
                     <Stack
                         sx={{ py: 3 }}
                         // gap={isMobile ? 1 : 2}
@@ -101,9 +100,9 @@ function NewDetail() {
                             animateThumbnails={true}
                         />
                     </Box>
-                    {/*<Typography gutterBottom component={'h1'} variant={isMobile ? 'h3' : 'h2'}>*/}
-                    {/*    {detail.title}*/}
-                    {/*</Typography>*/}
+                    <Typography gutterBottom component={'h1'} sx={{fontSize: '2rem'}}>
+                        {detail.title}
+                    </Typography>
                     <Typography gutterBottom align={'right'} variant={'subtitle1'}>
                         {`Tác giả ${detail.author}`}
                     </Typography>

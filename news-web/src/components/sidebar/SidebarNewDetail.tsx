@@ -10,34 +10,30 @@ import CardHorizontal from "../card/CardHorizontal";
 
 function SidebarNewDetail({ category }:{ category:Category }) {
     const style = {
-        position: 'sticky',
         left: 0,
         top: '50px',
         paddingTop: '50px',
     };
     const [newsRelated, setNewsRelated] = useState<News[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    // const isMobile = useMediaQuery((theme: Theme) =>
-    //     theme.breakpoints.down('sm'),
-    // );
     useEffect(() => {
         getNewsByCategory(category).then((news) => {
             const newsRemoveDescription = news
                 .map((item) => {
                     return { ...item, description: '' };
                 })
-                .slice(0, 3);
+                .slice(0, 5);
             setNewsRelated(newsRemoveDescription);
             setLoading(false);
         });
     }, []);
     return (
         <Box sx={style}>
-            <Typography gutterBottom variant={'h3'}>
-                Các bài báo liên quan
+            <Typography gutterBottom variant={'h6'} align={'left'} sx={{ backgroundColor: '#D21D21', color: 'white', paddingLeft:'16px'}}  >
+                Tin cùng chuyên mục
             </Typography>
             <Stack sx={{ position: 'static' }} spacing={3}>
-                {newsRelated.slice(0, 3).map((news) => (
+                {newsRelated.slice(0, 5).map((news) => (
                     <CardHorizontal
                         isLoading={loading}
                         news={news}
