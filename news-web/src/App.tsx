@@ -13,10 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {/* <Routes> */}
-        {/* <Route path="/new/:id" element={<NewDetail />} /> */}
         <WebRouter/>
-      {/* </Routes> */}
       <Footer/>
     </div>
   );

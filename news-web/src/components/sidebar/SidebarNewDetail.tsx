@@ -1,7 +1,7 @@
 import {Category} from "../define/Category";
 import {useEffect, useState} from "react";
-import {Box, useMediaQuery} from "@mui/material";
-import {Theme} from "@mui/material";
+import {Box} from "@mui/material";
+// import {Theme} from "@mui/material";
 import {getNewsByCategory} from "../service/NewService";
 import {News} from "../type/NewType";
 import Typography from "@mui/material/Typography";
@@ -17,9 +17,9 @@ function SidebarNewDetail({ category }:{ category:Category }) {
     };
     const [newsRelated, setNewsRelated] = useState<News[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    const isMobile = useMediaQuery((theme: Theme) =>
-        theme.breakpoints.down('sm'),
-    );
+    // const isMobile = useMediaQuery((theme: Theme) =>
+    //     theme.breakpoints.down('sm'),
+    // );
     useEffect(() => {
         getNewsByCategory(category).then((news) => {
             const newsRemoveDescription = news

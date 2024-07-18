@@ -6,6 +6,7 @@ import HomePage from '../pages/PageMain/HomePage';
 import Error from '../pages/PageMain/ErrorPage';
 import EventPage from '../pages/PageMain/EventPage';
 import SignIn from '../pages/UserPage/SignIn';
+import NewDetail from '../pages/NewDetail';
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/dang-nhap",
     element: <SignIn/>,
-  },
+  },{
+    path:"/new/:id",
+        element: <NewDetail/>
+    }
 
 ]);
 
