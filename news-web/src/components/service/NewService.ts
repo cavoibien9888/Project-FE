@@ -59,7 +59,7 @@ const getNewsListByIds = (ids: string[]): NewsContent[] => {
 };
 const fetchNewsContent = async (url: string): Promise<NewsContent> => {
     try {
-        const { data } = await axios.get(url);
+        const { data } = await axios.get(`http://localhost:5000/proxy?url=${encodeURIComponent(url)}`);
         const $ = cheerio.load(data);
 
         const title = $('h1.detail-title').text();

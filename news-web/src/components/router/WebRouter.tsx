@@ -7,6 +7,7 @@ import Error from '../pages/PageMain/ErrorPage';
 import EventPage from '../pages/PageMain/EventPage';
 import SignIn from '../pages/UserPage/SignIn';
 import NewDetail from '../pages/NewDetail';
+import NewComponent from '../NewComponent';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,9 @@ const router = createBrowserRouter([
   },{
     path:"/new/:id",
         element: <NewDetail/>
+    },{
+        path:"/test",
+        element: <NewComponent/>
     }
 
 ]);
