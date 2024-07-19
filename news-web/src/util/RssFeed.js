@@ -11,14 +11,29 @@ const fetchRssFeed = async (url) => {
         const items = xmlDoc.querySelectorAll('item');
 
         const parsedItems = Array.from(items).map((item) => {
+            const title = item.querySelector('title').textContent;
+            const link = item.querySelector('link').textContent;
+            const guid = item.querySelector('guid').textContent;
+            const description = item.querySelector('description').textContent;
+            const pubDate = item.querySelector('pubDate').textContent;
+
+            // Extract image src from description
+            const imgTagMatch = description.match(/<img src='([^']+)'/);
+            const image = imgTagMatch ? imgTagMatch[1] : '';
+
+            // Extract category between double backslashes after 'https://baotintuc.vn'
+            const categoryMatch = link.match(/https:\/\/baotintuc\.vn(.*)/);
+            const category = categoryMatch ? categoryMatch[1].split('\\').slice(1, 2).join('') : '';
+
             return {
-                title: item.querySelector('title').textContent.trim(),
-                description: item.querySelector('description').textContent.trim(),
-                link: item.querySelector('link').textContent.trim(),
-                pubDate: item.querySelector('pubDate').textContent.trim(),
-                guid: item.querySelector('guid').textContent.trim(),
+                title,
+                link,
+                guid,
+                description,
+                pubDate,
+                category,
+                image
             };
-            console.log(item.querySelector('title').textContent.trim());
         });
 
         return parsedItems;
