@@ -14,9 +14,9 @@ const DetailPage = () => {
 
     // lấy đường dẫn lại
     const {slug} = useParams();
-    // console.log(slug);
-    const link = `https://tienphong.vn/${slug}`
-    // console.log(link);
+    console.log(slug);
+    const link = `https://baotintuc.vn/${slug}`
+    console.log(link);
 
     const [content, setContent] = useState({
         title: '',

@@ -17,13 +17,10 @@ const fetchRssFeed = async (url) => {
             const description = item.querySelector('description').textContent;
             const pubDate = item.querySelector('pubDate').textContent;
 
-            // Extract image src from description
             const imgTagMatch = description.match(/<img src='([^']+)'/);
             const image = imgTagMatch ? imgTagMatch[1] : '';
 
-            // Extract category between double backslashes after 'https://baotintuc.vn'
-            const categoryMatch = link.match(/https:\/\/baotintuc\.vn(.*)/);
-            const category = categoryMatch ? categoryMatch[1].split('\\').slice(1, 2).join('') : '';
+            const cate = link.split('/')[3] || '';
 
             return {
                 title,
@@ -31,8 +28,8 @@ const fetchRssFeed = async (url) => {
                 guid,
                 description,
                 pubDate,
-                category,
-                image
+                cate,
+                image,
             };
         });
 

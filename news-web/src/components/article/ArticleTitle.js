@@ -18,7 +18,7 @@ const ArticleTitle = ({ feed }) => {
     // get slug for detail article
     function getSlugFromLink(link) {
         const lastSlashIndex = link.lastIndexOf('/');
-        const slug = link.substring(lastSlashIndex + 1);
+        const slug = cate+'/'+link.substring(lastSlashIndex + 1);
         return slug;
     }
 
@@ -58,6 +58,7 @@ const ArticleTitle = ({ feed }) => {
             /> */}
             {cate}
             <h2 className='title'>{title}</h2>
+            {/*<h2 className={'abc'}>{cate}</h2>*/}
             {/* <span className='date'>{updated}</span> */}
             {/* <button className='date' onClick={() => handleButtonClick(getSlugFromLink(link))}>Chi tiết</button> */}
             {/* <button className='date'>Chi tiết</button> */}

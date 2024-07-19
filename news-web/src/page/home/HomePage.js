@@ -27,9 +27,8 @@ const HomePage = () => {
     }, []);
 
     // Chia dữ liệu thành 2 phần
-    const firstSection = dataArticle.slice(0, 25);
-    const secondSection = dataArticle.slice(25, 50);
-    const thirdSection = dataArticle.slice(50, 100);
+    const firstSection = dataArticle.slice(0, 6);
+    const secondSection = dataArticle.slice(6, 9);
     console.log(firstSection)
     const handleSearch = (searchTerm) => {
         setSearchTerm(searchTerm);
@@ -64,11 +63,6 @@ const HomePage = () => {
                                     <Article feed={item}></Article>
                                 </div>
                             ))}
-                            {secondSection.map((item, index) => (
-                                <div key={index}>
-                                    <Article feed={item}></Article>
-                                </div>
-                            ))}
                         </>
                     ) : (
                         // Hiển thị kết quả tìm kiếm nếu có kết quả
@@ -81,7 +75,7 @@ const HomePage = () => {
                 </section>
                 <section className="article-right">
                     {
-                        thirdSection.map((item, index) => (
+                        secondSection.map((item, index) => (
                             <div key={index}>
                                 <ArticleTitle feed={item}></ArticleTitle>
                             </div>
