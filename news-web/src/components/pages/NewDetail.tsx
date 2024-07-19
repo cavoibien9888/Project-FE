@@ -85,7 +85,7 @@ function NewDetail() {
                             </Link>
                         </Breadcrumbs>
                         <Typography variant={'subtitle1'}>
-                            {formatDate(detail.publishDate)}
+                            {detail.publishDate}
                         </Typography>
                     </Stack>
 
