@@ -13,10 +13,11 @@ import TextToSpeechWrapper from "../util/TextToSpeechWrapper";
 const DetailPage = () => {
 
     // lấy đường dẫn lại
-    const {slug} = useParams();
-    console.log(slug);
-    const link = `https://baotintuc.vn/${slug}`
+    const { cate, slug } = useParams();
+    const link = `https://baotintuc.vn/${cate}/${slug}`
     console.log(link);
+    const fullUrl = `http://localhost:5000/proxy?url=${encodeURIComponent(link)}`;
+    console.log(fullUrl);
 
     const [content, setContent] = useState({
         title: '',
@@ -47,7 +48,7 @@ const DetailPage = () => {
 
     useEffect(() => {
 
-            getRssFeedDetail(link, (result) => {
+            getRssFeedDetail(fullUrl, (result) => {
                 console.log('da vao trang chi tiet');
                 console.log(result.title); // In ra tiêu đề
                 console.log(result.sapo); // In ra mô tả

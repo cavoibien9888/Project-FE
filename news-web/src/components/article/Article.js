@@ -17,9 +17,10 @@ const Article = ({ feed }) => {
     // console.log(article);
 
     // get slug for detail article
-    function getSlugFromLink(link) {
+    function getSlugFromLink(link,cate) {
         const lastSlashIndex = link.lastIndexOf('/');
         const slug =cate+"/"+ link.substring(lastSlashIndex + 1);
+        console.log("slug at article",slug);
         return slug;
     }
 
@@ -40,17 +41,18 @@ const Article = ({ feed }) => {
         }
     }
 
-    const handleButtonClick = (link) => {
+    const handleButtonClick = (link, cate) => {
         handelAddHistory(article);
 
-        const slug = `/${link}`;
+        const slug = getSlugFromLink(link, cate);
+        console.log("slug at change url", slug);
         navigate(slug);
     };
 
 
     return (
         // <div>
-        <div className="article" onClick={() => handleButtonClick(getSlugFromLink(link))}>
+        <div className="article" onClick={() => handleButtonClick(getSlugFromLink(link),cate)}>
             {/* <a href={link}>
             </a> */}
             <img
