@@ -19,7 +19,7 @@ const Article = ({ feed }) => {
     // get slug for detail article
     function getSlugFromLink(link) {
         const lastSlashIndex = link.lastIndexOf('/');
-        const slug = link.substring(lastSlashIndex + 1);
+        const slug =cate+"/"+ link.substring(lastSlashIndex + 1);
         return slug;
     }
 

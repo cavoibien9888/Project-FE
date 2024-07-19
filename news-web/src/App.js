@@ -19,7 +19,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage></HomePage>} />
                     <Route path="/history" element={<HistoryPage></HistoryPage>} />
-                    <Route path="/:slug" element={<DetailPage></DetailPage>} />
+                    <Route path="/:cate/:slug" element={<DetailPage></DetailPage>} />
                     {/*<Route path="/chitiet" element={<DetailPage></DetailPage>} />*/}
                     {/*<Route path="/danhmuc" element={<DanhMuc></DanhMuc>} />*/}
 

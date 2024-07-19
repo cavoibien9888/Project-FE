@@ -42,7 +42,8 @@ const fetchRssFeed = async (url) => {
 
 const getRssFeedDetail = async (url, callback) => {
     try {
-        const response = await axios.get(url);
+        const proxyUrl = `http://localhost:5000/proxy?url=${encodeURIComponent(url)}`;
+        const response = await axios.get(proxyUrl);
         const html = response.data;
 
         const parser = new DOMParser();

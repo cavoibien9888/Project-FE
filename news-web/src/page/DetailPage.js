@@ -40,12 +40,15 @@ const DetailPage = () => {
     }
     useEffect(() => {
         const newComments = JSON.parse(localStorage.getItem("comment"))
-        setComments(newComments);
-    })
+        if (newComments) {
+            setComments(newComments);
+        }
+    }, [])
 
     useEffect(() => {
 
             getRssFeedDetail(link, (result) => {
+                console.log('da vao trang chi tiet');
                 console.log(result.title); // In ra tiêu đề
                 console.log(result.sapo); // In ra mô tả
                 console.log(result.body); // In ra nội dung
@@ -94,7 +97,7 @@ const DetailPage = () => {
             <div className={"comment"}>
                 {/*Hiển thị danh sách bình luận*/}
                 {filteredComments.map((comment, index) => (
-                    <div key={index}>
+                    <div key={`${comment.id}-${index}`}>
                         <h4>{comment.name}:</h4>
                         <p>{comment.comment}</p>
                     </div>
