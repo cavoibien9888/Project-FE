@@ -2,12 +2,6 @@ import React, {useState} from 'react'
 import './loginForm.scss'
 
 function LoginForm() {
-    // const [showForgotPassword, setShowForgotPassword] = useState(false);
-
-    // const toggleForgotPassword = () => {
-    //   setShowForgotPassword(!showForgotPassword);
-    // };
-
     const [view, setView] = useState('login'); // 'login', 'register', 'forgotPassword'
 
     const toggleView = (newView) => {
