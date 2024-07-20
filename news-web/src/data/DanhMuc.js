@@ -329,24 +329,19 @@ const categorys = [
         dropdown: [
             {
                 id: 1,
-                name: 'Sao',
-                link: "/sao",
+                name: 'Bảo vệ chủ quyền',
+                link: 'https://baotintuc.vn/bao-ve-chu-quyen.rss',
             },
             {
                 id: 2,
-                name: 'Hậu trường sao',
-                link: "/hau-truong-sao",
+                name: 'Kinh tế biển đảo',
+                link: 'https://baotintuc.vn/kinh-te-bien-dao.rss',
             },
             {
                 id: 3,
-                name: 'Video',
-                link: "/video",
-            },
-            {
-                id: 4,
-                name: 'Đẹp',
-                link: "/dep",
-            },
+                name: 'Hỏi đáp Luật Cảnh sát biển',
+                link: 'https://baotintuc.vn/hoi-dap-luat-canh-sat-bien.rss',
+            }
         ]
     },
     {
@@ -357,19 +352,24 @@ const categorys = [
         dropdown: [
             {
                 id: 1,
-                name: 'Cổng trường',
-                link: "/cong-truong",
+                name: 'Chính sách',
+                link: 'https://baotintuc.vn/chinh-sach.rss',
             },
             {
                 id: 2,
-                name: 'Tuyển sinh',
-                link: "/tuyen-sinh",
+                name: 'Dịch bệnh',
+                link: 'https://baotintuc.vn/dich-benh.rss',
             },
             {
                 id: 3,
-                name: 'Du học',
-                link: "/du-hoc",
+                name: 'Bệnh viện – Bác sĩ',
+                link: 'https://baotintuc.vn/benh-vien-bac-si.rss',
             },
+            {
+                id: 4,
+                name: 'Giới tính',
+                link: 'https://baotintuc.vn/gioi-tinh.rss',
+            }
         ]
     },
     {
@@ -380,19 +380,24 @@ const categorys = [
         dropdown: [
             {
                 id: 1,
-                name: 'Công nghệ',
-                link: "/cong-nghe",
+                name: 'Hà Nội',
+                link: 'https://baotintuc.vn/ha-noi.rss',
             },
             {
                 id: 2,
-                name: 'Vi tính',
-                link: "/vi-tinh",
+                name: 'TP Hồ Chí Minh',
+                link: 'https://baotintuc.vn/tp-ho-chi-minh.rss',
             },
             {
                 id: 3,
-                name: 'Điện thoại',
-                link: "/dien-thoai",
+                name: 'Đà Nẵng',
+                link: 'https://baotintuc.vn/da-nang.rss',
             },
+            {
+                id: 4,
+                name: 'Tây Bắc - Tây Nguyên - Tây Nam bộ',
+                link: 'https://baotintuc.vn/tay-bac-tay-nguyen-tay-nam-bo.rss',
+            }
         ]
     },
     ]
