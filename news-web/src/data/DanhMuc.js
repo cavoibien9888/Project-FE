@@ -1,9 +1,9 @@
 const categorys = [
     {
         id: 1,
-        name: 'Xã hội',
-        link: "/xa-hoi",
-        rssLink: "https://tienphong.vn/rss/xa-hoi-2.rss",
+        name: 'Thời sự',
+        link: "/thoi-su",
+        rssLink: "https://baotintuc.vn/thoi-su.rss",
         dropdown: [
             {
                 id: 1,
@@ -36,9 +36,9 @@ const categorys = [
     },
     {
         id: 2,
-        name: 'Kinh tế',
-        link: "/kinh-te",
-        rssLink: "https://tienphong.vn/rss/kinh-te-3.rss",
+        name: 'Thế giới',
+        link: "/the-gioi",
+        rssLink: "https://baotintuc.vn/the-gioi.rss",
         dropdown: [
             {
                 id: 1,
@@ -71,9 +71,9 @@ const categorys = [
     },
     {
         id: 3,
-        name: 'Địa ốc',
-        link: "/dia-oc",
-        rssLink: "https://tienphong.vn/rss/dia-oc-166.rss",
+        name: 'Kinh tế',
+        link: "/kinh-te",
+        rssLink: "https://baotintuc.vn/kinh-te.rss",
         dropdown: [
             {
                 id: 1,
@@ -104,37 +104,42 @@ const categorys = [
     },
     {
         id: 4,
-        name: 'Sức khoẻ',
-        link: "/suc-khoe",
-        rssLink: "https://tienphong.vn/rss/suc-khoe-210.rss",
+        name: 'Xã hội',
+        link: "/xa-hoi",
+        rssLink: "https://baotintuc.vn/xa-hoi.rss",
         dropdown: [
             {
                 id: 1,
-                name: 'Bác sĩ online',
-                link: "/bac-si-online",
+                name: 'Vấn đề quan tâm',
+                link: "/van-de-quan-tam",
             },
             {
                 id: 2,
-                name: 'Thuốc dùng  - Thuốc tốt',
-                link: "/thuoc-dung-thuoc-tot",
+                name: 'Phóng sự- điều tra',
+                link: "/phong-su-dieu-tra",
             },
             {
                 id: 3,
-                name: 'Làm đẹp mỗi ngày',
-                link: "/lam-dep-moi-ngay",
+                name: 'người tốt việc tốt',
+                link: "/nguoi-tot-viec-tot",
             },
             {
                 id: 4,
-                name: 'Thì thầm bên gối',
-                link: "/thi-tham-ben-goi",
+                name: 'Mạng xã hội',
+                link: "/mang-xa-hoi",
             },
+            {
+                id:5,
+                name:'Chính sách BHXH-BHYT',
+                link:'/chinh-sach-BHXH-BHYT',
+            }
         ]
     },
     {
         id: 5,
-        name: 'Thế giới',
-        link: "/the-gioi",
-        rssLink: "https://tienphong.vn/rss/the-gioi-5.rss",
+        name: 'Pháp luật',
+        link: '/phap-luat',
+        rssLink: "https://baotintuc.vn/phap-luat.rss",
         dropdown: [
             {
                 id: 1,
@@ -150,9 +155,9 @@ const categorys = [
     },
     {
         id: 6,
-        name: 'Giới trẻ',
-        link: "/gioi-tre",
-        rssLink: "https://tienphong.vn/rss/gioi-tre-4.rss",
+        name: 'Văn hóa',
+        link: "/van-hoa",
+        rssLink: "https://baotintuc.vn/van-hoa.rss",
 
         dropdown: [
             {
@@ -174,9 +179,9 @@ const categorys = [
     },
     {
         id: 7,
-        name: 'Pháp luật',
-        link: "/phap-luat",
-        rssLink: "https://tienphong.vn/rss/phap-luat-12.rss",
+        name: 'Giáo dục',
+        link: "/giao-duc",
+        rssLink: "https://baotintuc.vn/giao-duc.rss",
 
         dropdown: [
             {
@@ -195,7 +200,7 @@ const categorys = [
         id: 8,
         name: 'Thể thao',
         link: "/the-thao",
-        rssLink: "https://tienphong.vn/rss/the-thao-11.rss",
+        rssLink: "https://baotintuc.vn/the-thao.rss",
         dropdown: [
             {
                 id: 1,
@@ -216,18 +221,18 @@ const categorys = [
     },
     {
         id: 9,
-        name: 'Người lính',
-        link: "/nguoi-linh",
-        rssLink: "https://tienphong.vn/rss/hanh-trang-nguoi-linh-182.rss",
+        name: 'Hồ sơ',
+        link: "/nho-so",
+        rssLink: " https://baotintuc.vn/ho-so.rss",
         dropdown: [
 
         ]
     },
     {
         id: 10,
-        name: 'Xe',
-        link: "/xe",
-        rssLink: "https://tienphong.vn/rss/xe-113.rss",
+        name: 'Quân sự',
+        link: "/quan-su",
+        rssLink: "https://baotintuc.vn/quan-su.rss",
         dropdown: [
             {
                 id: 1,
@@ -253,9 +258,9 @@ const categorys = [
     },
     {
         id: 11,
-        name: 'Văn hoá',
-        link: "/van-hoa",
-        rssLink: "https://tienphong.vn/rss/van-hoa-7.rss",
+        name: 'Khoa học - Công nghệ',
+        link: "/khoa-hoc-cong-nghe",
+        rssLink: "https://baotintuc.vn/khoa-hoc-cong-nghe.rss",
         dropdown: [
             {
                 id: 1,
@@ -281,9 +286,9 @@ const categorys = [
     },
     {
         id: 12,
-        name: 'Giải trí',
-        link: "/giai-tri",
-        rssLink: "https://tienphong.vn/rss/giai-tri-36.rss",
+        name: 'Biển đảo',
+        link: "/bien-dao-viet-nam",
+        rssLink: "https://baotintuc.vn/bien-dao-viet-nam.rss",
         dropdown: [
             {
                 id: 1,
@@ -309,9 +314,9 @@ const categorys = [
     },
     {
         id: 13,
-        name: 'Giáo dục',
-        link: "/giao-duc",
-        rssLink: "https://tienphong.vn/rss/giao-duc-71.rss",
+        name: 'Y tế',
+        link: "/suc-khoe",
+        rssLink: "https://baotintuc.vn/suc-khoe.rss",
         dropdown: [
             {
                 id: 1,
@@ -332,9 +337,9 @@ const categorys = [
     },
     {
         id: 14,
-        name: 'Khoa học',
-        link: "/khoa-hoc",
-        rssLink: "https://tienphong.vn/rss/cong-nghe-45.rss",
+        name: 'Địa phương',
+        link: "/dia-phuong",
+        rssLink: "https://baotintuc.vn/dia-phuong.rss",
         dropdown: [
             {
                 id: 1,
@@ -353,115 +358,7 @@ const categorys = [
             },
         ]
     },
-    {
-        id: 15,
-        name: 'Hoa hậu',
-        link: "/hoa-hau",
-        rssLink: "https://tienphong.vn/rss/hoa-hau-253.rss",
-        dropdown: [
-            {
-                id: 1,
-                name: 'Tin tức',
-                link: "/tin-tuc",
-            },
-            {
-                id: 2,
-                name: 'Ảnh',
-                link: "/anh",
-            },
-            {
-                id: 3,
-                name: 'Video',
-                link: "/hoa-hau-video",
-            },
-            {
-                id: 4,
-                name: 'Hậu trường hoa hậu',
-                link: "/hau-truong-hoa-hau",
-            },
-        ]
-    },
-    {
-        id: 16,
-        name: 'Bạn đọc',
-        link: "/ban-doc",
-        rssLink: "https://tienphong.vn/rss/ban-doc-15.rss",
-        dropdown: [
-            {
-                id: 1,
-                name: 'Điều tra',
-                link: "/dieu-tra",
-            },
-            {
-                id: 2,
-                name: 'Diễn đàn',
-                link: "/dien-dan",
-            },
-            {
-                id: 3,
-                name: 'Hồi âm',
-                link: "/hoi-am",
-            },
-            {
-                id: 4,
-                name: 'Nhân ái',
-                link: "/nhan-ai",
-            },
-        ]
-    },
-    {
-        id: 17,
-        name: 'Video',
-        link: "/video-clip",
-        rssLink: "https://tienphong.vn/rss/giai-tri-video-153.rss",
-        dropdown: [
-            {
-                id: 1,
-                name: 'Thời sự',
-                link: "/thoi-su",
-            },
-            {
-                id: 2,
-                name: 'Showbiz TV',
-                link: "/showbiz-tv",
-            },
-            {
-                id: 3,
-                name: 'Thời tiết',
-                link: "/thoi-tiet",
-            },
-            {
-                id: 4,
-                name: 'Thị trường',
-                link: "/video-thi-truong",
-            },
-            {
-                id: 5,
-                name: 'Thể thao',
-                link: "/video-the-thao",
-            },
-            {
-                id: 6,
-                name: 'Quân sự',
-                link: "/quan-su",
-            },
-            {
-                id: 7,
-                name: 'Mutex',
-                link: "/mutex",
-            },
-        ]
-    },
-    {
-        id: 18,
-        name: 'Tôi nghĩ',
-        link: "/toi-nghi",
-        rssLink: "https://tienphong.vn/rss/toi-nghi-273.rss",
-
-        dropdown: [
-        ]
-    },
-]
+    ]
 
 const danhmuc = [
     {

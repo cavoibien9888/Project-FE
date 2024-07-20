@@ -49,8 +49,8 @@ const getRssFeedDetail = async (url, callback) => {
         const doc = parser.parseFromString(html, 'text/html');
         const title = doc.querySelector('h1.detail-title').textContent.trim();
         const sapo = doc.querySelector('h2.sapo').textContent.trim();
-        const body = doc.querySelector('div.boxdetail')?.innerHTML ?? '';
-        const bodys = doc.querySelector('div.boxdetail')?.textContent ?? '';
+        const body = doc.querySelector('div.contents')?.innerHTML ?? '';
+        const bodys = doc.querySelector('div.contents')?.textContent ?? '';
         const tag = doc.querySelector('div.article__tag')?.innerHTML ?? '';
 
         const imgElements = doc.querySelectorAll('img');
