@@ -65,28 +65,28 @@ const categorys = [
         dropdown: [
             {
                 id: 1,
-                name: 'Đô thị',
-                link: "/do-thi",
+                name: 'Thị trường - Tiền tệ',
+                link: 'https://baotintuc.vn/thi-truong-tien-te.rss',
             },
             {
                 id: 2,
-                name: 'Thị trường',
-                link: "/thi-truong",
+                name: 'Doanh nghiệp - Doanh nhân',
+                link: 'https://baotintuc.vn/doanh-nghiep-doanh-nhan.rss',
             },
             {
                 id: 3,
-                name: 'Nhà đẹp',
-                link: "/nha-dep",
+                name: 'Bất động sản',
+                link: 'https://baotintuc.vn/bat-dong-san.rss',
             },
             {
                 id: 4,
-                name: 'Tư vấn',
-                link: "/tu-van",
+                name: 'Tài chính – Ngân hàng',
+                link: 'https://baotintuc.vn/tai-chinh-ngan-hang.rss',
             },
             {
                 id: 5,
-                name: 'Dự án',
-                link: "/du-an",
+                name: 'Người tiêu dùng',
+                link: 'https://baotintuc.vn/nguoi-tieu-dung.rss',
             },
         ]
     },
@@ -99,27 +99,27 @@ const categorys = [
             {
                 id: 1,
                 name: 'Vấn đề quan tâm',
-                link: "/van-de-quan-tam",
+                link: 'https://baotintuc.vn/van-de-quan-tam.rss',
             },
             {
                 id: 2,
-                name: 'Phóng sự- điều tra',
-                link: "/phong-su-dieu-tra",
+                name: 'Phóng sự - Điều tra',
+                link: 'https://baotintuc.vn/phong-su-dieu-tra.rss',
             },
             {
                 id: 3,
-                name: 'người tốt việc tốt',
-                link: "/nguoi-tot-viec-tot",
+                name: 'Người tốt - Việc tốt',
+                link: 'https://baotintuc.vn/nguoi-tot-viec-tot.rss',
             },
             {
                 id: 4,
                 name: 'Mạng xã hội',
-                link: "/mang-xa-hoi",
+                link: 'https://baotintuc.vn/mang-xa-hoi.rss',
             },
             {
-                id:5,
-                name:'Chính sách BHXH-BHYT',
-                link:'/chinh-sach-BHXH-BHYT',
+                id: 5,
+                name: 'Chính sách BHXH - BHYT',
+                link: 'https://baotintuc.vn/chinh-sach-bhxh-bhyt.rss',
             }
         ]
     },
