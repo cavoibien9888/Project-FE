@@ -43,17 +43,20 @@ const categorys = [
             {
                 id: 1,
                 name: 'Phân tích-Nhận định',
-                link: "https://baotintuc.vn/phan-tich-nhan-dinh.rss",
+                link: "/phan-tich-nhan-dinh",
+                rssLink: "https://baotintuc.vn/phan-tich-nhan-dinh.rss",
             },
             {
                 id: 2,
                 name: 'Chuyện lạ thế giới',
-                link: "https://baotintuc.vn/chuyen-la-the-gioi.rss",
+                link: "/chuyen-la-the-gioi",
+                rssLink: "https://baotintuc.vn/chuyen-la-the-gioi.rss",
             },
             {
                 id: 3,
                 name: 'Người Việt 4 phương',
-                link: "https://baotintuc.vn/nguoi-viet-4-phuong.rss",
+                link: "/nguoi-viet-4-phuong",
+                rssLink: "https://baotintuc.vn/nguoi-viet-4-phuong.rss",
             }
         ]
     },
@@ -66,27 +69,32 @@ const categorys = [
             {
                 id: 1,
                 name: 'Thị trường - Tiền tệ',
-                link: 'https://baotintuc.vn/thi-truong-tien-te.rss',
+                link: "/thi-truong-tien-te",
+                rssLink: "https://baotintuc.vn/thi-truong-tien-te.rss",
             },
             {
                 id: 2,
                 name: 'Doanh nghiệp - Doanh nhân',
-                link: 'https://baotintuc.vn/doanh-nghiep-doanh-nhan.rss',
+                link: "/doanh-nghiep-doanh-nhan",
+                rssLink: "https://baotintuc.vn/doanh-nghiep-doanh-nhan.rss",
             },
             {
                 id: 3,
                 name: 'Bất động sản',
-                link: 'https://baotintuc.vn/bat-dong-san.rss',
+                link: "/bat-dong-san",
+                rssLink: "https://baotintuc.vn/bat-dong-san.rss",
             },
             {
                 id: 4,
                 name: 'Tài chính – Ngân hàng',
-                link: 'https://baotintuc.vn/tai-chinh-ngan-hang.rss',
+                link: "/tai-chinh-ngan-hang",
+                rssLink: "https://baotintuc.vn/tai-chinh-ngan-hang.rss",
             },
             {
                 id: 5,
                 name: 'Người tiêu dùng',
-                link: 'https://baotintuc.vn/nguoi-tieu-dung.rss',
+                link: "/nguoi-tieu-dung",
+                rssLink: "https://baotintuc.vn/nguoi-tieu-dung.rss",
             },
         ]
     },
@@ -99,27 +107,32 @@ const categorys = [
             {
                 id: 1,
                 name: 'Vấn đề quan tâm',
-                link: 'https://baotintuc.vn/van-de-quan-tam.rss',
+                link: "/van-de-quan-tam",
+                rssLink: "https://baotintuc.vn/van-de-quan-tam.rss",
             },
             {
                 id: 2,
                 name: 'Phóng sự - Điều tra',
-                link: 'https://baotintuc.vn/phong-su-dieu-tra.rss',
+                link: "/phong-su-dieu-tra",
+                rssLink: "https://baotintuc.vn/phong-su-dieu-tra.rss",
             },
             {
                 id: 3,
                 name: 'Người tốt - Việc tốt',
-                link: 'https://baotintuc.vn/nguoi-tot-viec-tot.rss',
+                link: "/nguoi-tot-viec-tot",
+                rssLink: "https://baotintuc.vn/nguoi-tot-viec-tot.rss",
             },
             {
                 id: 4,
                 name: 'Mạng xã hội',
-                link: 'https://baotintuc.vn/mang-xa-hoi.rss',
+                link: "/mang-xa-hoi",
+                rssLink: "https://baotintuc.vn/mang-xa-hoi.rss",
             },
             {
                 id: 5,
                 name: 'Chính sách BHXH - BHYT',
-                link: 'https://baotintuc.vn/chinh-sach-bhxh-bhyt.rss',
+                link: "/chinh-sach-bhxh-bhyt",
+                rssLink: "https://baotintuc.vn/chinh-sach-bhxh-bhyt.rss",
             }
         ]
     },
@@ -132,22 +145,26 @@ const categorys = [
             {
                 id: 1,
                 name: 'Văn bản mới',
-                link: 'https://baotintuc.vn/van-ban-moi.rss',
+                link: "/van-ban-moi",
+                rssLink: "https://baotintuc.vn/van-ban-moi.rss",
             },
             {
                 id: 2,
                 name: 'An ninh trật tự',
-                link: 'https://baotintuc.vn/an-ninh-trat-tu.rss',
+                link: "/an-ninh-trat-tu",
+                rssLink: "https://baotintuc.vn/an-ninh-trat-tu.rss",
             },
             {
                 id: 3,
                 name: 'Chống buôn lậu - hàng giả',
-                link: 'https://baotintuc.vn/chong-buon-lau-hang-gia.rss',
+                link: "/chong-buon-lau-hang-gia",
+                rssLink: "https://baotintuc.vn/chong-buon-lau-hang-gia.rss",
             },
             {
                 id: 4,
                 name: 'Đơn thư bạn đọc',
-                link: 'https://baotintuc.vn/don-thu-ban-doc.rss',
+                link: "/don-thu-ban-doc",
+                rssLink: "https://baotintuc.vn/don-thu-ban-doc.rss",
             }
         ]
     },
@@ -156,32 +173,36 @@ const categorys = [
         name: 'Văn hóa',
         link: "/van-hoa",
         rssLink: "https://baotintuc.vn/van-hoa.rss",
-
         dropdown: [
             {
                 id: 1,
                 name: 'Đời sống văn hoá',
-                link: 'https://baotintuc.vn/doi-song-van-hoa.rss',
+                link: "/doi-song-van-hoa",
+                rssLink: "https://baotintuc.vn/doi-song-van-hoa.rss",
             },
             {
                 id: 2,
                 name: 'Giải trí - Sao',
-                link: 'https://baotintuc.vn/giai-tri-sao.rss',
+                link: "/giai-tri-sao",
+                rssLink: "https://baotintuc.vn/giai-tri-sao.rss",
             },
             {
                 id: 3,
                 name: 'Du lịch',
-                link: 'https://baotintuc.vn/du-lich.rss',
+                link: "/du-lich",
+                rssLink: "https://baotintuc.vn/du-lich.rss",
             },
             {
                 id: 4,
                 name: 'Sáng tác',
-                link: 'https://baotintuc.vn/sang-tac.rss',
+                link: "/sang-tac",
+                rssLink: "https://baotintuc.vn/sang-tac.rss",
             },
             {
                 id: 5,
                 name: 'Ẩm thực',
-                link: 'https://baotintuc.vn/am-thuc.rss',
+                link: "/am-thuc",
+                rssLink: "https://baotintuc.vn/am-thuc.rss",
             }
         ]
     },
@@ -190,27 +211,30 @@ const categorys = [
         name: 'Giáo dục',
         link: "/giao-duc",
         rssLink: "https://baotintuc.vn/giao-duc.rss",
-
         dropdown: [
             {
                 id: 1,
                 name: 'Tuyển sinh',
-                link: 'https://baotintuc.vn/tuyen-sinh.rss',
+                link: "/tuyen-sinh",
+                rssLink: "https://baotintuc.vn/tuyen-sinh.rss",
             },
             {
                 id: 2,
                 name: 'Du học',
-                link: 'https://baotintuc.vn/du-hoc.rss',
+                link: "/du-hoc",
+                rssLink: "https://baotintuc.vn/du-hoc.rss",
             },
             {
                 id: 3,
                 name: 'Bàn tròn giáo dục',
-                link: 'https://baotintuc.vn/ban-tron-giao-duc.rss',
+                link: "/ban-tron-giao-duc",
+                rssLink: "https://baotintuc.vn/ban-tron-giao-duc.rss",
             },
             {
                 id: 4,
                 name: 'Tư vấn',
-                link: 'https://baotintuc.vn/tu-van.rss',
+                link: "/tu-van",
+                rssLink: "https://baotintuc.vn/tu-van.rss",
             }
         ]
     },
@@ -223,50 +247,58 @@ const categorys = [
             {
                 id: 1,
                 name: 'Bóng đá',
-                link: 'https://baotintuc.vn/bong-da.rss',
+                link: "/bong-da",
+                rssLink: "https://baotintuc.vn/bong-da.rss",
             },
             {
                 id: 2,
                 name: 'Tennis',
-                link: 'https://baotintuc.vn/tennis.rss',
+                link: "/tennis",
+                rssLink: "https://baotintuc.vn/tennis.rss",
             },
             {
                 id: 3,
                 name: 'Thể thao 24h',
-                link: 'https://baotintuc.vn/the-thao-24h.rss',
+                link: "/the-thao-24h",
+                rssLink: "https://baotintuc.vn/the-thao-24h.rss",
             },
             {
                 id: 4,
                 name: 'Chuyện thể thao',
-                link: 'https://baotintuc.vn/chuyen-the-thao.rss',
+                link: "/chuyen-the-thao",
+                rssLink: "https://baotintuc.vn/chuyen-the-thao.rss",
             }
         ]
     },
     {
         id: 9,
         name: 'Hồ sơ',
-        link: "/nho-so",
-        rssLink: " https://baotintuc.vn/ho-so.rss",
+        link: "/ho-so",
+        rssLink: "https://baotintuc.vn/ho-so.rss",
         dropdown: [
             {
                 id: 1,
                 name: 'Giải mật',
-                link: 'https://baotintuc.vn/giai-mat.rss',
+                link: "/giai-mat",
+                rssLink: "https://baotintuc.vn/giai-mat.rss",
             },
             {
                 id: 2,
                 name: 'Thế giới bí ẩn',
-                link: 'https://baotintuc.vn/the-gioi-bi-an.rss',
+                link: "/the-gioi-bi-an",
+                rssLink: "https://baotintuc.vn/the-gioi-bi-an.rss",
             },
             {
                 id: 3,
                 name: 'Nhân vật - Sự kiện',
-                link: 'https://baotintuc.vn/nhan-vat-su-kien.rss',
+                link: "/nhan-vat-su-kien",
+                rssLink: "https://baotintuc.vn/nhan-vat-su-kien.rss",
             },
             {
                 id: 4,
                 name: 'Vụ án nổi tiếng',
-                link: 'https://baotintuc.vn/vu-an-noi-tieng.rss',
+                link: "/vu-an-noi-tieng",
+                rssLink: "https://baotintuc.vn/vu-an-noi-tieng.rss",
             }
         ]
     },
@@ -279,22 +311,26 @@ const categorys = [
             {
                 id: 1,
                 name: 'Hồ sơ quân sự',
-                link: 'https://baotintuc.vn/ho-so-quan-su.rss',
+                link: "/ho-so-quan-su",
+                rssLink: "https://baotintuc.vn/ho-so-quan-su.rss",
             },
             {
                 id: 2,
                 name: 'Tập trận - Diễn tập',
-                link: 'https://baotintuc.vn/tap-tran-dien-tap.rss',
+                link: "/tap-tran-dien-tap",
+                rssLink: "https://baotintuc.vn/tap-tran-dien-tap.rss",
             },
             {
                 id: 3,
                 name: 'Quốc phòng',
-                link: 'https://baotintuc.vn/quoc-phong.rss',
+                link: "/quoc-phong",
+                rssLink: "https://baotintuc.vn/quoc-phong.rss",
             },
             {
                 id: 4,
                 name: 'Vũ khí khí tài',
-                link: 'https://baotintuc.vn/vu-khi-khi-tai.rss',
+                link: "/vu-khi-khi-tai",
+                rssLink: "https://baotintuc.vn/vu-khi-khi-tai.rss",
             }
         ]
     },
@@ -307,17 +343,20 @@ const categorys = [
             {
                 id: 1,
                 name: 'Ô tô xe máy',
-                link: 'https://baotintuc.vn/o-to-xe-may.rss',
+                link: "/o-to-xe-may",
+                rssLink: "https://baotintuc.vn/o-to-xe-may.rss",
             },
             {
                 id: 2,
                 name: 'Điện tử - Viễn thông',
-                link: 'https://baotintuc.vn/dien-tu-vien-thong.rss',
+                link: "/dien-tu-vien-thong",
+                rssLink: "https://baotintuc.vn/dien-tu-vien-thong.rss",
             },
             {
                 id: 3,
                 name: 'Khoa học đời sống',
-                link: 'https://baotintuc.vn/khoa-hoc-doi-song.rss',
+                link: "/khoa-hoc-doi-song",
+                rssLink: "https://baotintuc.vn/khoa-hoc-doi-song.rss",
             }
         ]
     },
@@ -330,17 +369,20 @@ const categorys = [
             {
                 id: 1,
                 name: 'Bảo vệ chủ quyền',
-                link: 'https://baotintuc.vn/bao-ve-chu-quyen.rss',
+                link: "/bao-ve-chu-quyen",
+                rssLink: "https://baotintuc.vn/bao-ve-chu-quyen.rss",
             },
             {
                 id: 2,
                 name: 'Kinh tế biển đảo',
-                link: 'https://baotintuc.vn/kinh-te-bien-dao.rss',
+                link: "/kinh-te-bien-dao",
+                rssLink: "https://baotintuc.vn/kinh-te-bien-dao.rss",
             },
             {
                 id: 3,
                 name: 'Hỏi đáp Luật Cảnh sát biển',
-                link: 'https://baotintuc.vn/hoi-dap-luat-canh-sat-bien.rss',
+                link: "/hoi-dap-luat-canh-sat-bien",
+                rssLink: "https://baotintuc.vn/hoi-dap-luat-canh-sat-bien.rss",
             }
         ]
     },
@@ -353,22 +395,26 @@ const categorys = [
             {
                 id: 1,
                 name: 'Chính sách',
-                link: 'https://baotintuc.vn/chinh-sach.rss',
+                link: "/chinh-sach",
+                rssLink: "https://baotintuc.vn/chinh-sach.rss",
             },
             {
                 id: 2,
                 name: 'Dịch bệnh',
-                link: 'https://baotintuc.vn/dich-benh.rss',
+                link: "/dich-benh",
+                rssLink: "https://baotintuc.vn/dich-benh.rss",
             },
             {
                 id: 3,
                 name: 'Bệnh viện – Bác sĩ',
-                link: 'https://baotintuc.vn/benh-vien-bac-si.rss',
+                link: "/benh-vien-bac-si",
+                rssLink: "https://baotintuc.vn/benh-vien-bac-si.rss",
             },
             {
                 id: 4,
                 name: 'Giới tính',
-                link: 'https://baotintuc.vn/gioi-tinh.rss',
+                link: "/gioi-tinh",
+                rssLink: "https://baotintuc.vn/gioi-tinh.rss",
             }
         ]
     },
@@ -381,26 +427,30 @@ const categorys = [
             {
                 id: 1,
                 name: 'Hà Nội',
-                link: 'https://baotintuc.vn/ha-noi.rss',
+                link: "/ha-noi",
+                rssLink: "https://baotintuc.vn/ha-noi.rss",
             },
             {
                 id: 2,
                 name: 'TP Hồ Chí Minh',
-                link: 'https://baotintuc.vn/tp-ho-chi-minh.rss',
+                link: "/tp-ho-chi-minh",
+                rssLink: "https://baotintuc.vn/tp-ho-chi-minh.rss",
             },
             {
                 id: 3,
                 name: 'Đà Nẵng',
-                link: 'https://baotintuc.vn/da-nang.rss',
+                link: "/da-nang",
+                rssLink: "https://baotintuc.vn/da-nang.rss",
             },
             {
                 id: 4,
                 name: 'Tây Bắc - Tây Nguyên - Tây Nam bộ',
-                link: 'https://baotintuc.vn/tay-bac-tay-nguyen-tay-nam-bo.rss',
+                link: "/tay-bac-tay-nguyen-tay-nam-bo",
+                rssLink: "https://baotintuc.vn/tay-bac-tay-nguyen-tay-nam-bo.rss",
             }
         ]
     },
-    ]
+];
 
 
 export default categorys;
