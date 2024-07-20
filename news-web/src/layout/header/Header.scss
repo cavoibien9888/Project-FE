@@ -41,7 +41,10 @@
         box-shadow: none;
         color: $white;
     }
-    
+    #modal{
+        width: 500px;
+        height: 500px;
+    }
     .history-icon {
         color: $white;
 
@@ -49,4 +52,4 @@
             margin-left: 8px;
         }
     }
-}
+}   

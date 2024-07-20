@@ -3,16 +3,17 @@ import './Header.scss';
 import FormSearch from '../../components/FormSearch';
 import { Link, NavLink } from 'react-router-dom';
 
-import Modal from 'react-bootstrap/Modal';
+import Modal from 'react-modal';
 import LoginForm from '../../components/login/LoginForm'
-import RegisterForm from '../../components/login/Register'
+
+Modal.setAppElement('#root');
 
 const Header = () => {
-    const [show, setShow] = useState(false);
+        
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const handleClose = () => setModalIsOpen(false);
+    const handleShow = () => setModalIsOpen(true);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    const [activeForm] = useState('login');    
     return (
         <div>
             <div className="header">
@@ -24,24 +25,41 @@ const Header = () => {
                 <button className='btn' onClick={handleShow}>
                     Đăng nhập
                 </button>
-                <Modal show={show} onHide={handleClose}>
-                    <Modal.Header closeButton>
-                        <h2>{activeForm === 'login' ? 'Đăng nhập' : 'Đăng ký'}</h2>
-                    </Modal.Header>
-                    <Modal.Body>
-                        {activeForm === 'login' && (
-                            <LoginForm handleClose={handleClose} />
-                        )}
-                        {activeForm === 'register' && (
-                            <RegisterForm handleClose={handleClose} />
-                        )}
-                    </Modal.Body>
-                    <Modal.Footer>
-                    {/* <Button variant="secondary" onClick={handleClose}>
-                        Đóng
-                    </Button> */}
-                    </Modal.Footer>
+
+                <Modal isOpen={modalIsOpen} 
+                       onRequestClose={handleClose} 
+                       contentLabel="Form Modal" 
+
+                       style={{
+                        content: {
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)',
+                          width: '500px',
+                          height: '500px',
+                          background: 'white',
+                          padding: '20px',
+                          border: '1px solid #ccc',
+                          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                          borderRadius: '8px'
+                        },
+                        overlay: {
+                          position: 'fixed',
+                          top: '0',
+                          left: '0',
+                          right: '0',
+                          bottom: '0',
+                          backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                      }}>
+                        <button onClick={() => setModalIsOpen(false)}
+                                style={{position:'absolute', top: '0', right: '0', 
+                                        padding: '5px', border: 'none', backgroundColor: 'white'}}
+                        >X</button>
+                    <LoginForm/>
                 </Modal>
+
                 <a href="history" className='history-icon'>
                     Lịch sử xem
                     <i class="fa-solid fa-clock-rotate-left"></i>

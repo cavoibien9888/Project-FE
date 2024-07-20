@@ -61,6 +61,10 @@ ul {
   box-shadow: none;
   color: #fff;
 }
+.header #modal {
+  width: 500px;
+  height: 500px;
+}
 .header .history-icon {
   color: #fff;
 }
