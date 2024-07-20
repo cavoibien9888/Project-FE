@@ -1,0 +1,140 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.content-home {
+  padding: 0 40px;
+  display: flex;
+}
+.content-home .block-article {
+  height: 560px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-home .block-article .article-home {
+  width: 612px;
+}
+.content-home .block-article .article-home img {
+  height: 380px;
+  width: 100%;
+}
+.content-home .block-article .article-home a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 21px;
+  color: #333;
+}
+.content-home .block-article .article-home h3 {
+  color: #212529;
+  font-size: 28px;
+  line-height: 30px;
+  margin-top: 10px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+.content-home .block-article .article-home h3:hover {
+  color: #a50a02;
+}
+.content-home .block-article .article-home p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  transition: 0.4s;
+}
+.content-home .block-article .article-home p:hover {
+  color: #a50a02;
+}
+.content-home .block-right {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 350px;
+}
+.content-home .block-right p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0 2px;
+  color: #a50a02;
+  border-top: 2px solid #a50a02;
+  display: block;
+}
+.content-home .block-right ul {
+  width: 100%;
+  margin-top: 20px;
+}
+.content-home .block-right ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c9c8c8;
+  padding-bottom: 16px;
+}
+.content-home .block-right ul li a {
+  width: 100%;
+  text-decoration: none;
+  color: #212529;
+  transition: 0.4s;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.content-home .block-right ul li a:hover {
+  color: #a50a02;
+}
+
+.list-home {
+  padding: 0 40px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.layout {
+  display: flex;
+}
+
+.article-right {
+  margin-top: 20px;
+}
+
+.list-history {
+  padding: 0 40px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.caption {
+  margin-left: 40px;
+  margin-top: 160px;
+}/*# sourceMappingURL=home.css.map */

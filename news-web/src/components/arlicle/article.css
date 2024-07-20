@@ -1,0 +1,55 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.article {
+  margin-top: 40px;
+  height: 270px;
+  width: 300px;
+}
+.article img {
+  width: 300px;
+  height: 180px;
+}
+.article a {
+  width: 100%;
+  color: #212529;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+  display: block;
+}
+.article a:hover {
+  color: #a50a02;
+}
+.article .title {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+.article .decription {
+  margin-top: 80px;
+}/*# sourceMappingURL=article.css.map */

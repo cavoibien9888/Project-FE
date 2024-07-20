@@ -1,0 +1,66 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.articleDM {
+  margin-top: 20px;
+  margin-left: 23px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.articles {
+  margin-top: 10px;
+  height: 270px;
+  width: 300px;
+}
+.articles .imga {
+  width: 300px;
+  height: 180px;
+}
+.articles a {
+  width: 100%;
+  color: #212529;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+  display: flex;
+  margin-left: 20px;
+}
+.articles a:hover {
+  color: #a50a02;
+}
+.articles .title {
+  width: 300px;
+  display: block;
+  margin-top: 10px;
+}
+.articles .decription {
+  margin-top: 70px;
+}
+.articles .date {
+  margin-left: 10px;
+}/*# sourceMappingURL=arlicleDM.css.map */

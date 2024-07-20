@@ -1,0 +1,60 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #a50a02;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px 8px;
+  z-index: 1;
+}
+.dropdown-content li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.dropdown-content li:hover {
+  background-color: #a50a02;
+}
+.dropdown-content li:hover a {
+  color: #fff !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+}/*# sourceMappingURL=dropdown.css.map */

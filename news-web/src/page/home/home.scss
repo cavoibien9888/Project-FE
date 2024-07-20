@@ -1,0 +1,135 @@
+@import "../../App.scss";
+
+.content-home {
+    padding: 0 40px;
+    display: flex;
+
+    .block-article {
+        height: 560px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .article-home {
+            width: 612px;
+
+            img {
+                height: 380px;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 21px;
+                color: #333;
+            }
+
+            h3 {
+                color: $text-black;
+                font-size: 28px;
+                line-height: 30px;
+                margin-top: 10px;
+                transition: 0.4s;
+                font-weight: 700;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 21px;
+                transition: 0.4s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .block-right {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 350px;
+
+        p {
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 0 2px;
+            color: $primary-color;
+            border-top: 2px solid $primary-color;
+            display: block;
+        }
+
+        ul {
+            width: 100%;
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 10px;
+                border-bottom: 1px solid #c9c8c8;
+                padding-bottom: 16px;
+
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    color: $text-black;
+                    transition: 0.4s;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    &:hover {
+                        color: $primary-color;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+.list-home {
+    padding: 0 40px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.layout {
+    display: flex;
+}
+
+.article-right {
+    margin-top: 20px;
+}
+
+.list-history {
+    padding: 0 40px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.caption {
+    margin-left: 40px;
+    margin-top: 160px;
+}

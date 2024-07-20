@@ -1,0 +1,43 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #212529;
+}
+
+ul {
+  list-style: none;
+}
+
+.search {
+  display: block;
+}
+.search input {
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 100px;
+  border: 2px solid #212529;
+  margin-top: 10px;
+}
+.search i {
+  margin-left: 20px;
+}/*# sourceMappingURL=formSearch.css.map */
