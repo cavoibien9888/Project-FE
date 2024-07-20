@@ -4,7 +4,7 @@ import Header from '../layout/header/Header';
 import Navigation from '../layout/navigation/Navigation';
 import AarticleDm from '../components/arlicleDM/AarticleDm';
 import FormSearch from "../components/FormSearch";
-import "./detail.css"
+import "./DetailPage.scss"
 
 
 

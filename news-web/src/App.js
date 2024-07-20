@@ -6,7 +6,6 @@ import DetailPage from "./page/DetailPage";
 import HomePage from './page/home/HomePage';
 import HistoryPage from './page/HistoryPage';
 import DanhMuc from './page/DanhMuc';
-import categorys from './data/DanhMuc';
 import route from './data/route';
 
 function App() {
@@ -24,7 +23,12 @@ function App() {
                     {/*<Route path="/danhmuc" element={<DanhMuc></DanhMuc>} />*/}
 
                     {route.map((item, index) => (
-                        <Route path={item.link} element={<DanhMuc rssLink={item.rssLink} title={item.name}></DanhMuc>} />
+                      <Fragment key={index}>
+                          <Route path={item.link} element={<DanhMuc rssLink={item.rssLink} title={item.name} />} />
+                          {item.dropdown && item.dropdown.map((subItem, subIndex) => (
+                            <Route key={subIndex} path={subItem.link} element={<DanhMuc rssLink={subItem.rssLink} title={subItem.name} />} />
+                          ))}
+                      </Fragment>
                     ))}
                 </Routes>
             </BrowserRouter>
