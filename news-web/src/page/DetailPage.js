@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {getRssFeedDetail} from "../util/RssFeed";
+import { fetchRssFeed, getRssFeedDetail } from '../util/RssFeed';
 import Header from "../layout/header/Header";
 import Navigation from "../layout/navigation/Navigation";
 
@@ -8,6 +8,7 @@ import {useParams} from 'react-router-dom';
 import "./detail.css"
 import TextToSpeech from '../util/TextToSpeech';
 import TextToSpeechWrapper from "../util/TextToSpeechWrapper";
+import Article from '../components/article/Article';
 
 
 const DetailPage = () => {
@@ -18,7 +19,7 @@ const DetailPage = () => {
     console.log(link);
     const fullUrl = `http://localhost:5000/proxy?url=${encodeURIComponent(link)}`;
     console.log(fullUrl);
-
+    const [dataArticle, setDataArticle] = useState([]);
     const [content, setContent] = useState({
         title: '',
         sapo: '',
@@ -45,7 +46,19 @@ const DetailPage = () => {
             setComments(newComments);
         }
     }, [])
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const dataArticle = await fetchRssFeed('https://baotintuc.vn/tin-moi-nhat.rss');
+                setDataArticle(dataArticle);
 
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
+        fetchData();
+    }, []);
+    const firstSection = dataArticle.slice(0, 3);
     useEffect(() => {
 
             getRssFeedDetail(fullUrl, (result) => {
@@ -54,11 +67,8 @@ const DetailPage = () => {
                 console.log(result.sapo); // In ra mô tả
                 console.log(result.body); // In ra nội dung
                 console.log(result.tag);//In ra nhãn bài báo
-                // console.log(result.more);
-                // console.log(result.mgbox)
                 console.log(content);
                 const text = result;
-                // lỗi khong set trực tiếp giá trị cho content mà phải tạo cái mới set lại
                 setContent({
                     ...content,
                     title: text.title,
@@ -66,8 +76,6 @@ const DetailPage = () => {
                     body: text.body,
                     bodys: text.bodys,
                     tag: text.tag,
-                    // more: text.more,
-                    // mgbox: text.mgbox,
                 });
 
                 return result;
@@ -85,28 +93,38 @@ const DetailPage = () => {
             <Navigation></Navigation>
 
             <TextToSpeech text={content.bodys } />
-            {/*<TextToSpeechWrapper html={content.body} />/*/}
+            <div className={"content-main"}>
+                <div className={'content-right'}>
+                    <div className={'article__title cms-title'}>{content.title}</div>
+                    <div className={'article__sapo cms-desc'}>{content.sapo}</div>
+                    <div className={'article__body cms-body'} dangerouslySetInnerHTML={{ __html: content.body }}></div>
+                    <div className={'article__tag'} dangerouslySetInnerHTML={{ __html: content.tag }}></div>
+                </div>
+                <div className={'content-left'}>
+                    <div className={'sideBar'}>
+                        {firstSection.map((item, index) => (
+                          <div key={index}>
+                              <Article feed={item}></Article>
+                          </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
 
+            <div className={'title-comment'}> Bình Luận</div>
 
-            <div className={"article__title cms-title"}>{content.title}</div>
-            <div className={"article__sapo cms-desc"}>{content.sapo}</div>
-            <div className={"article__body cms-body"} dangerouslySetInnerHTML={{__html: content.body}}></div>
-            <div className={"article__tag"} dangerouslySetInnerHTML={{__html: content.tag}}></div>
-            {/*<div className={"more-story-3"} dangerouslySetInnerHTML={{ __html: content.more }}></div>*/}
-            <div className={"title-comment"}> Bình Luận</div>
-
-            <div className={"comment"}>
+            <div className={'comment'}>
                 {/*Hiển thị danh sách bình luận*/}
                 {filteredComments.map((comment, index) => (
-                    <div key={`${comment.id}-${index}`}>
-                        <h4>{comment.name}:</h4>
-                        <p>{comment.comment}</p>
-                    </div>
+                  <div key={`${comment.id}-${index}`}>
+                      <h4>{comment.name}:</h4>
+                      <p>{comment.comment}</p>
+                  </div>
                 ))}
 
                 {/* Form nhập bình luận */}
                 <form onSubmit={submitComment}>
-                    <label className={"name"} htmlFor="name">Tên của bạn:</label>
+                <label className={"name"} htmlFor="name">Tên của bạn:</label>
                     <input className={"text-name"} type="text" id="name" name="name"/><br/>
 
                     <label className={"comments"} htmlFor="comment">Bình luận:</label>
