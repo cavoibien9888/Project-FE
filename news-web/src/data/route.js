@@ -13,21 +13,21 @@ const route = [
             },
             {
                 id: 2,
-                name: 'Tin tức',
-                link: "/tin-tuc",
-                rssLink: "https://tienphong.vn/rss/xa-hoi-tin-tuc-104.rss",
+                name: 'Chính sách và cuộc sống',
+                link: "/chinh-sach-va-cuoc-song",
+                rssLink: "https://baotintuc.vn/chinh-sach-va-cuoc-song.rss",
             },
             {
                 id: 3,
-                name: 'Chuyện hôm nay',
-                link: "/chuyen-hom-nay",
-                rssLink: "https://tienphong.vn/rss/xa-hoi-2.rss",
+                name: 'Chính phủ với người dân',
+                link: "/chinh-phu-voi-nguoi-dan",
+                rssLink: "https://baotintuc.vn/chinh-phu-voi-nguoi-dan.rss",
             },
             {
                 id: 4,
-                name: 'Phóng sự',
-                link: "/phong-su",
-                rssLink: "https://tienphong.vn/rss/xa-hoi-2.rss",
+                name: 'Phản hồi - Phản biện',
+                link: "/phan-hoi-phan-bien",
+                rssLink: "https://baotintuc.vn/phan-hoi-phan-bien.rss",
 
 
             },
@@ -39,6 +39,23 @@ const route = [
         name: 'Thế giới',
         link: "/the-gioi",
         rssLink: "https://baotintuc.vn/the-gioi.rss",
+        dropdown: [
+            {
+                id: 1,
+                name: 'Phân tích-Nhận định',
+                link: "https://baotintuc.vn/phan-tich-nhan-dinh.rss",
+            },
+            {
+                id: 2,
+                name: 'Chuyện lạ thế giới',
+                link: "https://baotintuc.vn/chuyen-la-the-gioi.rss",
+            },
+            {
+                id: 3,
+                name: 'Người Việt 4 phương',
+                link: "https://baotintuc.vn/nguoi-viet-4-phuong.rss",
+            }
+        ]
     },
     {
         id: 3,
