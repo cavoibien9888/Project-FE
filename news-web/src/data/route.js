@@ -131,14 +131,24 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: 'Phân tích -  Bình luận',
-                link: "phan-tich-biinh-luan",
+                name: 'Văn bản mới',
+                link: 'https://baotintuc.vn/van-ban-moi.rss',
             },
             {
                 id: 2,
-                name: 'Chuyện lạ',
-                link: "chuyen-la",
+                name: 'An ninh trật tự',
+                link: 'https://baotintuc.vn/an-ninh-trat-tu.rss',
             },
+            {
+                id: 3,
+                name: 'Chống buôn lậu - hàng giả',
+                link: 'https://baotintuc.vn/chong-buon-lau-hang-gia.rss',
+            },
+            {
+                id: 4,
+                name: 'Đơn thư bạn đọc',
+                link: 'https://baotintuc.vn/don-thu-ban-doc.rss',
+            }
         ]
     },
     {
@@ -150,19 +160,29 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: 'Nhịp sống',
-                link: "nhip-song",
+                name: 'Đời sống văn hoá',
+                link: 'https://baotintuc.vn/doi-song-van-hoa.rss',
             },
             {
                 id: 2,
-                name: 'Cộng đồng mạng',
-                link: "cong-dong-mang",
+                name: 'Giải trí - Sao',
+                link: 'https://baotintuc.vn/giai-tri-sao.rss',
             },
             {
                 id: 3,
-                name: 'Tài năng trẻ',
-                link: "tai-nang-tre",
+                name: 'Du lịch',
+                link: 'https://baotintuc.vn/du-lich.rss',
             },
+            {
+                id: 4,
+                name: 'Sáng tác',
+                link: 'https://baotintuc.vn/sang-tac.rss',
+            },
+            {
+                id: 5,
+                name: 'Ẩm thực',
+                link: 'https://baotintuc.vn/am-thuc.rss',
+            }
         ]
     },
     {
@@ -174,14 +194,24 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: "Bản tin 113",
-                link: "/ban-tin-113",
+                name: 'Tuyển sinh',
+                link: 'https://baotintuc.vn/tuyen-sinh.rss',
             },
             {
                 id: 2,
-                name: 'Pháp đình',
-                link: "/phap-dinh",
+                name: 'Du học',
+                link: 'https://baotintuc.vn/du-hoc.rss',
             },
+            {
+                id: 3,
+                name: 'Bàn tròn giáo dục',
+                link: 'https://baotintuc.vn/ban-tron-giao-duc.rss',
+            },
+            {
+                id: 4,
+                name: 'Tư vấn',
+                link: 'https://baotintuc.vn/tu-van.rss',
+            }
         ]
     },
     {
@@ -193,18 +223,23 @@ const route = [
             {
                 id: 1,
                 name: 'Bóng đá',
-                link: "/bong-da",
+                link: 'https://baotintuc.vn/bong-da.rss',
             },
             {
-                id: 1,
-                name: 'Hậu trường thể thao',
-                link: "/hau-truong-the-thao",
+                id: 2,
+                name: 'Tennis',
+                link: 'https://baotintuc.vn/tennis.rss',
             },
             {
-                id: 1,
-                name: 'Golf',
-                link: "/golf",
+                id: 3,
+                name: 'Thể thao 24h',
+                link: 'https://baotintuc.vn/the-thao-24h.rss',
             },
+            {
+                id: 4,
+                name: 'Chuyện thể thao',
+                link: 'https://baotintuc.vn/chuyen-the-thao.rss',
+            }
         ]
     },
     {
@@ -213,7 +248,26 @@ const route = [
         link: "/nho-so",
         rssLink: " https://baotintuc.vn/ho-so.rss",
         dropdown: [
-
+            {
+                id: 1,
+                name: 'Giải mật',
+                link: 'https://baotintuc.vn/giai-mat.rss',
+            },
+            {
+                id: 2,
+                name: 'Thế giới bí ẩn',
+                link: 'https://baotintuc.vn/the-gioi-bi-an.rss',
+            },
+            {
+                id: 3,
+                name: 'Nhân vật - Sự kiện',
+                link: 'https://baotintuc.vn/nhan-vat-su-kien.rss',
+            },
+            {
+                id: 4,
+                name: 'Vụ án nổi tiếng',
+                link: 'https://baotintuc.vn/vu-an-noi-tieng.rss',
+            }
         ]
     },
     {
@@ -224,24 +278,24 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: 'Thị trường xe',
-                link: "/th-truong-xe",
+                name: 'Hồ sơ quân sự',
+                link: 'https://baotintuc.vn/ho-so-quan-su.rss',
             },
             {
                 id: 2,
-                name: 'Đánh giá xe',
-                link: "/danh-gia-xe",
+                name: 'Tập trận - Diễn tập',
+                link: 'https://baotintuc.vn/tap-tran-dien-tap.rss',
             },
             {
                 id: 3,
-                name: 'Cộng đồng xe',
-                link: "/cong-dong-xe",
+                name: 'Quốc phòng',
+                link: 'https://baotintuc.vn/quoc-phong.rss',
             },
             {
                 id: 4,
-                name: 'Tư vấn',
-                link: "/tu-van",
-            },
+                name: 'Vũ khí khí tài',
+                link: 'https://baotintuc.vn/vu-khi-khi-tai.rss',
+            }
         ]
     },
     {
@@ -252,24 +306,19 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: 'Tin văn hoá',
-                link: "/tin-van-hoa",
+                name: 'Ô tô xe máy',
+                link: 'https://baotintuc.vn/o-to-xe-may.rss',
             },
             {
                 id: 2,
-                name: 'Câu chuyện văn hoá',
-                link: "/cau-chuyen-van-hoa",
+                name: 'Điện tử - Viễn thông',
+                link: 'https://baotintuc.vn/dien-tu-vien-thong.rss',
             },
             {
                 id: 3,
-                name: 'Sách',
-                link: "/sach",
-            },
-            {
-                id: 4,
-                name: 'Sổ bụi',
-                link: "/so-bui",
-            },
+                name: 'Khoa học đời sống',
+                link: 'https://baotintuc.vn/khoa-hoc-doi-song.rss',
+            }
         ]
     },
     {
