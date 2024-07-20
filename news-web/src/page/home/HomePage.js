@@ -16,7 +16,6 @@ const HomePage = () => {
         const fetchData = async () => {
             try {
                 const dataArticle = await fetchRssFeed('https://baotintuc.vn/tin-moi-nhat.rss');
-                // const dataArticle = await fetchRssFeed('https://tienphong.vn/rss/home.rss');
                 setDataArticle(dataArticle);
 
             } catch (error) {

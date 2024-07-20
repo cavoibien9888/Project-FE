@@ -5,7 +5,7 @@ import Navigation from "../layout/navigation/Navigation";
 
 import {useParams} from 'react-router-dom';
 
-import "./detail.css"
+import "./DetailPage.scss"
 import TextToSpeech from '../util/TextToSpeech';
 import TextToSpeechWrapper from "../util/TextToSpeechWrapper";
 import Article from '../components/article/Article';
