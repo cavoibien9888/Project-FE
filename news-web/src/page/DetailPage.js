@@ -35,10 +35,10 @@ const DetailPage = () => {
         const comment = event.target.elements.comment.value;
         const name = event.target.elements.name.value;
         const newComment = {id: link, name: name, comment: comment};
-        const cmt = [newComment, ...comments]; // Thêm bình luận mới vào danh sách
+        const cmt = [newComment, ...comments];
         localStorage.setItem("comment", (JSON.stringify(cmt)));
-        event.target.elements.comment.value = ''; // Xóa nội dung của input
-        event.target.elements.name.value = ''; // Xóa tên của input
+        event.target.elements.comment.value = '';
+        event.target.elements.name.value = '';
     }
     useEffect(() => {
         const newComments = JSON.parse(localStorage.getItem("comment"))
