@@ -7,7 +7,6 @@ import {useParams} from 'react-router-dom';
 
 import "./DetailPage.scss"
 import TextToSpeech from '../util/TextToSpeech';
-import TextToSpeechWrapper from "../util/TextToSpeechWrapper";
 import Article from '../components/article/Article';
 
 
@@ -26,6 +25,7 @@ const DetailPage = () => {
         body: '',
         bodys: '',
         tag: '',
+        date:'',
         // more:'',
         // mgbox:'',
     });
@@ -35,10 +35,10 @@ const DetailPage = () => {
         const comment = event.target.elements.comment.value;
         const name = event.target.elements.name.value;
         const newComment = {id: link, name: name, comment: comment};
-        const cmt = [newComment, ...comments]; // Thêm bình luận mới vào danh sách
+        const cmt = [newComment, ...comments];
         localStorage.setItem("comment", (JSON.stringify(cmt)));
-        event.target.elements.comment.value = ''; // Xóa nội dung của input
-        event.target.elements.name.value = ''; // Xóa tên của input
+        event.target.elements.comment.value = '';
+        event.target.elements.name.value = '';
     }
     useEffect(() => {
         const newComments = JSON.parse(localStorage.getItem("comment"))
@@ -75,7 +75,7 @@ const DetailPage = () => {
                     sapo: text.sapo,
                     body: text.body,
                     bodys: text.bodys,
-                    tag: text.tag,
+                    date:text.date,
                 });
 
                 return result;
@@ -96,9 +96,9 @@ const DetailPage = () => {
             <div className={"content-main"}>
                 <div className={'content-right'}>
                     <div className={'article__title cms-title'}>{content.title}</div>
+                    <div className={'article__date'}>{content.date}</div>
                     <div className={'article__sapo cms-desc'}>{content.sapo}</div>
                     <div className={'article__body cms-body'} dangerouslySetInnerHTML={{ __html: content.body }}></div>
-                    <div className={'article__tag'} dangerouslySetInnerHTML={{ __html: content.tag }}></div>
                 </div>
                 <div className={'content-left'}>
                     <div className={'sideBar'}>
@@ -125,7 +125,7 @@ const DetailPage = () => {
                 {/* Form nhập bình luận */}
                 <form onSubmit={submitComment}>
                 <label className={"name"} htmlFor="name">Tên của bạn:</label>
-                    <input className={"text-name"} type="text" id="name" name="name"/><br/>
+                    <input className={"text-name"} type="text" id="name" name="name" /><br/>
 
                     <label className={"comments"} htmlFor="comment">Bình luận:</label>
                     <textarea className={"text"} id="comment" name="comment"></textarea><br/>

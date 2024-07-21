@@ -12,7 +12,7 @@ const Header = () => {
                 </Link>
                 {/*<FormSearch></FormSearch>*/}
                 {/*<div className="day">Chủ Nhật, 07/05/2023, 15:50:51 GMT+7</div>*/}
-                <a href="history" className='history-icon'>
+                <a href="http://localhost:3000/history" className='history-icon'>
                     Lịch sử xem
                     <i class="fa-solid fa-clock-rotate-left"></i>
                 </a>
