@@ -25,6 +25,7 @@ const DetailPage = () => {
         body: '',
         bodys: '',
         tag: '',
+        date:'',
         // more:'',
         // mgbox:'',
     });
@@ -74,7 +75,7 @@ const DetailPage = () => {
                     sapo: text.sapo,
                     body: text.body,
                     bodys: text.bodys,
-                    tag: text.tag,
+                    date:text.date,
                 });
 
                 return result;
@@ -95,9 +96,9 @@ const DetailPage = () => {
             <div className={"content-main"}>
                 <div className={'content-right'}>
                     <div className={'article__title cms-title'}>{content.title}</div>
+                    <div className={'article__date'}>{content.date}</div>
                     <div className={'article__sapo cms-desc'}>{content.sapo}</div>
                     <div className={'article__body cms-body'} dangerouslySetInnerHTML={{ __html: content.body }}></div>
-                    <div className={'article__tag'} dangerouslySetInnerHTML={{ __html: content.tag }}></div>
                 </div>
                 <div className={'content-left'}>
                     <div className={'sideBar'}>
