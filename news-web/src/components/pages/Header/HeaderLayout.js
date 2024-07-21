@@ -10,7 +10,7 @@ const HeaderLayout = () => {
         <div>
             <div className="fixed">
                 <Header></Header>
-                <Navigation></Navigation>
+                {/* <Navigation></Navigation> */}
             </div>
         </div>
     );

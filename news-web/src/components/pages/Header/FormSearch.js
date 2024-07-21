@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import '../../sass/formSearch.scss';
+
+// files & pages
+import '../../sass/header.scss';
 
 const FormSearch = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -13,20 +15,19 @@ const FormSearch = ({ onSearch }) => {
     };
 
     return (
-        <div>
-            <div className="search">
-                <input
-                    type="text"
-                    className=""
-                    placeholder="Tìm kiếm"
-                    value={searchTerm}
-                    onChange={handleInputChange}
-
-                />
-                <i className="fas fa-search" onClick={handleSearch}></i>
-
+        <div id='header_search-blk'>
+            <input
+                type="text"
+                id='header_search-input'
+                placeholder="Tìm kiếm"
+                value={searchTerm}
+                onChange={handleInputChange}
+            />
+            <div id='header_search-icon'>
+                <i className="fa-solid fa-magnifying-glass" onClick={handleSearch}></i>
             </div>
         </div>
     );
 };
+
 export default FormSearch;

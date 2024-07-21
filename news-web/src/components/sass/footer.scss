@@ -1,0 +1,82 @@
+@import '../../App.scss';
+@import './styles.scss';
+
+#footer {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    &_nav, &_contents {
+        @include paddingBar("paddingRL");
+    }
+    &_nav {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionCC");
+        background-color: #fff;
+        border-top: 2px #ed1b24 solid;
+        border-bottom: 2px #ed1b24 solid;
+    }
+    &_list {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSbC");
+        margin: 12px 0;
+        flex-direction: row;
+    }
+    &_contents {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionCC");
+        background-color: antiquewhite;
+        flex-direction: column;
+        padding: 2% 8%;
+    }
+    &_title {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionCC");
+    }
+    &_info {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSbC");
+        margin-top: 25px;
+        &-blk1 {
+            @include fullScreen("fullWidth");
+            @include positionBlk("positionCS");
+            flex-direction: column;
+        }
+    }
+}
+
+.footer {
+    &_title-text {
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+    &_title-info {
+        font-size: 22px;
+        font-weight: 600;    
+        color: #000;
+        text-transform: uppercase;
+    }
+}
+
+.blk1_img-logo {
+    width: 11rem;
+    margin-bottom: 10px;
+}
+
+#name {
+    &_eic {
+        font-size: 20px;
+        font-weight: 500;
+        &-blk {
+            @include fullScreen("fullWidth");
+            @include positionBlk("positionCS");
+            flex-direction: column;
+        }
+        &-title {
+            font-size: 20px;
+        }
+        
+    }
+}
