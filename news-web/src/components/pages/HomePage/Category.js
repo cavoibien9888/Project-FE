@@ -43,7 +43,7 @@ const Category = ({ rssLink, title }) => {
     return (
         <div>
             <Header></Header>
-            <Navigation></Navigation>
+            {/* <Navigation></Navigation> */}
             <h3 className="tieude" >{title}</h3>
             <FormSearch onSearch={handleSearch} />
 

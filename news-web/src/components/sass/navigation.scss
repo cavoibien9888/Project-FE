@@ -5,7 +5,6 @@
     @include fullScreen("fullWidth");
     @include positionBlk("positionSbC");
     color: #000;
-    padding: 7px 0;
     // font-weight: 600;
     // padding: 0 20px;
     i {
@@ -24,10 +23,12 @@
         font-weight: 500;
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
+        padding: 7px 0;
         & > li {
             // padding: 12px 7px;
             a {
                 color: #fff;
+                // color: $red;
                 // transition: 0.4s;
                 // &:hover {
                 //     color: $primary-color;

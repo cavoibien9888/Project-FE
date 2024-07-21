@@ -8,7 +8,7 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-    &_coSe, &_img, &_nav {
+    &_coSe, &_img, &_nav, &_eventDate {
         // @include fullScreen("fullWidth");
         @include paddingBar("paddingRL");
     }
@@ -81,6 +81,28 @@
         width: auto;
         height: 2rem;
     }
+    &_eventDate {
+        @include fullScreen("fullWidth");
+        &-blk {
+            @include fullScreen("fullWidth");
+            background-color: #f0f0f0;
+            padding: 8px 0;
+        }
+    }
+    &_event {
+        &-text {
+           font-size: 18px;
+           font-weight: 600;
+           text-transform: uppercase;
+           font-family: "Roboto", sans-serif;
+        }
+    }
+    &_blk {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSbC");
+        flex-direction: row;
+        padding: 0 2%;
+    }
 }
 
 .header {
@@ -130,6 +152,9 @@
             font-size: 22px;
             margin-left: 10px;
         }
+    }
+    &-icon:hover {
+        color: #000;
     }
     &-text {
         font-size: 18px;

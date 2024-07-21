@@ -13,6 +13,8 @@ const ListMenu = () => {
     const listCategory = useSelector(state => state.root.categorys);
     // console.log(listCategory);
     const dispatch = useDispatch();
+    // const [activeDropdown, setActiveDropdown] = useState(null);
+    // const [timeoutId, setTimeoutId] = useState(null);
 
     useEffect(() => {
         dispatch(loadCategory(categorys))
@@ -26,8 +28,14 @@ const ListMenu = () => {
                     <i class="fa-solid fa-house"></i>
                 </Link>
                 {listCategory.map(category => (
-                    <li className='dropdown' key={category.id} id={category.id}>
+                    <li 
+                        className='dropdown'
+                        key={category.id}
+                        id={category.id}
+                        // onMouseLeave={() => handleMouseEnter(category)}
+                    >
                         <NavLink to={category.link}>{category.name}</NavLink>
+                        {/* <DropDown dropdown={category.dropdown}></DropDown> */}
                         <DropDown dropdown={category.dropdown}></DropDown>
                     </li>
                 ))}

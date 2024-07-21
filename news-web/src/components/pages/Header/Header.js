@@ -10,6 +10,7 @@ import FormSearch from './FormSearch';
 import { fetchRssFeed } from '../../utils/RssFeed';
 import Article from '../../layout/Article/Article';
 import Navigation from '../../layout/Navigation/Navigation';
+import DateTime from './DateTime';
 
 
 const Header = () => {
@@ -51,6 +52,22 @@ const Header = () => {
             <div id='header_nav'>
                 <Navigation/>
             </div>
+            <div id='header_eventDate'>
+                <div id='header_eventDate-blk'>
+                    <div id='header_blk'>
+                        <div id='header_event'>
+                            <p id='header_event-text'>
+                                Sự Kiện
+                            </p>
+                        </div>
+                        <div id='header_date'>
+                            <DateTime/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             {/* <div className="header">
                 <Link to="/" className="logo">
                     <img srcSet="logo-web-white.png" alt="" />

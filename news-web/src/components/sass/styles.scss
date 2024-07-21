@@ -76,3 +76,14 @@ $red: #ed1b24;
     }
     
 }
+
+// <-------- DATE -------->
+.date {
+    @include positionBlk("positionCC");
+    &_vertical-line {
+        width: 1px;
+        height: 22px;
+        margin: 0 8px 0 10px;
+        background-color: #4b4b4b;
+    }
+}

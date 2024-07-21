@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // files & pages
 import '../../sass/homePage.scss';
-import HeaderLayout from '../Header/HeaderLayout';
+import Header from '../Header/Header';
 import { fetchRssFeed } from '../../utils/RssFeed';
 import Article from '../../layout/Article/Article';
 import ArticleTitle from '../../layout/Article/ArticleTitle';
@@ -51,20 +51,20 @@ const HomePage = () => {
 
     return (
         <div className="home">
-            <HeaderLayout></HeaderLayout>
-            <h3 className="caption">Trang chủ</h3>
+            <Header/>
+            {/* <h3 className="caption">Trang chủ</h3> */}
             <FormSearch onSearch={handleSearch} />
             <div className="layout">
                 <section className="list-home first">
                     {searchTerm.trim() === "" ? (
                         // Hiển thị các bài viết theo phân chia ban đầu nếu không có kết quả tìm kiếm
-                        <>
+                        <div>
                             {firstSection.map((item, index) => (
                                 <div key={index}>
                                     <Article feed={item}></Article>
                                 </div>
                             ))}
-                        </>
+                        </div>
                     ) : (
                         // Hiển thị kết quả tìm kiếm nếu có kết quả
                         searchResults.map((item, index) => (

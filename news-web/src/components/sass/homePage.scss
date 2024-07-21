@@ -1,7 +1,11 @@
 @import '../../App.scss';
 
+.layout {
+    padding: 0 8%;
+}
+
 .content-home {
-    padding: 0 40px;
+    // padding: 0 40px;
     display: flex;
 
     .block-article {
