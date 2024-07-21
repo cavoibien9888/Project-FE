@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ArticleHistory from '../components/article/ArticleHistory';
-import Header from '../Header/Header';
-import Navigation from '../../layout/Navigation/Navigation';
-import "./HomePage/home.scss";
+
+// files & pages
+import "../../sass/homePage.scss";
+import ArticleHistory from '../../layout/Article/ArticleHistory';
+// import Header from '../../pages/Header/Header';
+// import Navigation from '../../layout/Navigation/Navigation';
 import HeaderLayout from '../Header/HeaderLayout';
 
 const HistoryPage = () => {

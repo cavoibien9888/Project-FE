@@ -1,8 +1,10 @@
 import React from 'react';
-import "../sass/articleDM.scss";
-import {useDispatch, useSelector} from "react-redux";
-import {useNavigate} from "react-router-dom";
-import {addHistory} from "../../store/Action";
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
+// files & pages
+import '../../sass/articleDM.scss';
+import { addHistory } from '../../store/Action';
 
 const AarticleDm = ({ feed }) => {
     const { title, image, link, updated, description, cate } = feed;

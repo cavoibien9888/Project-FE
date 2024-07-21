@@ -1,7 +1,9 @@
 import React from 'react';
-import '../sass/';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+
+// files & pages
+import '../../sass/article.scss';
 import { addHistory } from '../../store/Action';
 
 const ArticleTitle = ({ feed }) => {

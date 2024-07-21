@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+
+// files & pages
+import '../../sass/detailPage.scss';
 import { fetchRssFeed } from '../../utils/RssFeed';
-import Header from '../layout/header/Header';
+import Header from '../Header/Header';
 import Navigation from '../../layout/Navigation/Navigation';
-import AarticleDm from '../components/arlicleDM/AarticleDm';
-import FormSearch from "../components/FormSearch";
-import "./DetailPage.scss"
+import ArticleDM from '../../layout/ArticleDM/ArticleDM';
+import FormSearch from '../../pages/Header/FormSearch';
 
 const Category = ({ rssLink, title }) => {
     console.log(rssLink)
@@ -48,7 +50,7 @@ const Category = ({ rssLink, title }) => {
             <div className="articleDM">
                 {filteredData.map((item, index) => (
                     <div key={index}>
-                        <AarticleDm feed={item} />
+                        <ArticleDM feed={item} />
                     </div>
                 ))}
             </div>

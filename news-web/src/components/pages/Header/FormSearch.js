@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./formSearch.scss";
+import '../../sass/formSearch.scss';
 
 const FormSearch = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');

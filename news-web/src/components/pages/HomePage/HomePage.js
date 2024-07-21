@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 
 // files & pages
 import '../../sass/homePage.scss';
-import { fetchRssFeed } from '../../utils/RssFeed';
-import Article from '../../components/article/Article';
 import HeaderLayout from '../Header/HeaderLayout';
-import ArticleTitle from '../../components/article/ArticleTitle';
-import FormSearch from '../../components/FormSearch';
+import { fetchRssFeed } from '../../utils/RssFeed';
+import Article from '../../layout/Article/Article';
+import ArticleTitle from '../../layout/Article/ArticleTitle';
+import FormSearch from '../Header/FormSearch';
 
 
 const HomePage = () => {
