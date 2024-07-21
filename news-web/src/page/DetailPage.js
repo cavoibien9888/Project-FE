@@ -125,7 +125,7 @@ const DetailPage = () => {
                 {/* Form nhập bình luận */}
                 <form onSubmit={submitComment}>
                 <label className={"name"} htmlFor="name">Tên của bạn:</label>
-                    <input className={"text-name"} type="text" id="name" name="name"/><br/>
+                    <input className={"text-name"} type="text" id="name" name="name" /><br/>
 
                     <label className={"comments"} htmlFor="comment">Bình luận:</label>
                     <textarea className={"text"} id="comment" name="comment"></textarea><br/>
