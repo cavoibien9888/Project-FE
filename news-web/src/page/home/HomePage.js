@@ -35,7 +35,7 @@ const HomePage = () => {
     if (searchTerm.trim() === '') {
       setSearchResults([]);
     } else {
-      // Thực hiện tìm kiếm trong dataArticle dựa trên searchTerm
+
       const filtered = dataArticle.filter((item) => {
         const title = item.title.toLowerCase();
         const searchTermLower = searchTerm.toLowerCase();
