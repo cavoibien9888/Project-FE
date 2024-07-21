@@ -29,17 +29,6 @@ const DanhMuc = ({ rssLink, title }) => {
 
 
 
-
-    // const fetchDatas = async () => {
-    //     try {
-    //         const dataArticle = await fetchRssFeed('https://tienphong.vn/rss/kinh-te-3.rss');
-    //         setDataArticle(dataArticle);
-    //         setFilteredData(dataArticle);
-    //     } catch (error) {
-    //         console.error('Error:', error);
-    //     }
-    // };
-
     const handleSearch = (searchTerm) => {
         const filtered = dataArticle.filter((item) => {
             // Xử lý logic tìm kiếm tại đây
