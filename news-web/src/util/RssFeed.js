@@ -51,7 +51,7 @@ const getRssFeedDetail = async (url, callback) => {
         const sapo = doc.querySelector('h2.sapo').textContent.trim();
         const body = doc.querySelector('div.contents')?.innerHTML ?? '';
         const bodys = doc.querySelector('div.contents')?.textContent ?? '';
-        const tag = doc.querySelector('div.article__tag')?.innerHTML ?? '';
+        const date = doc.querySelector('div.date')?.textContent ?? '';
 
         const imgElements = doc.querySelectorAll('img');
         imgElements.forEach((img) => {
@@ -66,7 +66,7 @@ const getRssFeedDetail = async (url, callback) => {
         });
 
         const more = doc.querySelector('div.recommend-news')?.textContent ?? '';
-        callback({ title, sapo, body, bodys, tag, more });
+        callback({ title, sapo, body, bodys, date });
 
     } catch (error) {
         console.log('Lỗi: ' + error);
