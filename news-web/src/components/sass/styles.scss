@@ -1,0 +1,77 @@
+@import '../../App.scss';
+
+$white: #fff;
+$black: #000;
+$red: #ed1b24;
+
+@mixin fullScreen($fullScreen) {
+    @if $fullScreen == "fullScreen" {
+        width: 100%;
+        height: 100%;
+    }
+
+    @if $fullScreen == "fullWidth" {
+        width: 100%;
+        height: auto;
+    }
+
+    @if $fullScreen == "fullHeight" {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@mixin paddingBar($paddingHome: "paddingRL") {
+    padding: 0 8%;
+}
+
+@mixin positionBlk($positionBlk) {
+    @if $positionBlk == "positionSbC" {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @if $positionBlk == "positionCC" {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @if $positionBlk == "positionSC" {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    @if $positionBlk == "positionCS" {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    @if $positionBlk == "positionSS" {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    @if $positionBlk == "positionEC" {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    @if $positionBlk == "positionCE" {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    @if $positionBlk == "positionEE" {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    
+}
