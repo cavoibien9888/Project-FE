@@ -16,7 +16,8 @@ const ArticleHistory = ({ feed }) => {
 
     function getSlugFromLink(link) {
         const lastSlashIndex = link.lastIndexOf('/');
-        const slug = link.substring(lastSlashIndex + 1);
+        const slug =cate+"/"+ link.substring(lastSlashIndex + 1);
+        console.log("slug at article",slug);
         return slug;
     }
 
