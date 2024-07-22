@@ -5,6 +5,7 @@ import Article from '../../components/article/Article';
 import HeaderLayout from '../../layout/HeaderLayout';
 import ArticleTitle from '../../components/article/ArticleTitle';
 import FormSearch from '../../components/FormSearch';
+import Footer from '../../layout/footer/Footer';
 
 
 const HomePage = () => {
@@ -81,6 +82,7 @@ const HomePage = () => {
           }
         </section>
       </div>
+      <Footer/>
     </div>
   );
 };
