@@ -38,8 +38,9 @@ const ArticleHistory = ({ feed }) => {
     const handleButtonClick = (link) => {
         handelAddHistory(article);
 
-        const slug = `/${link}`;
-        navigate(slug);
+        const slug = getSlugFromLink(link, cate);
+        console.log("slug at change url", slug);
+        window.location.href = `http://localhost:3000/${slug}`;
     };
 
     // xoa lich su
