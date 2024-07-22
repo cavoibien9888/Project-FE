@@ -8,8 +8,16 @@ const Header = () => {
         <div>
             <div className="header">
                 <Link to="/" className="logo">
-                    <img srcSet="logo-web-white.png" alt="" />
+                    <img src="https://cdnstatic.baotintuc.vn/web_images/baotintuc-logo.png" alt="" />
                 </Link>
+                <div className="bannerTop">
+                    <a>
+                        <img src="https://media.baotintuc.vn/Upload/QKrAM3u3JmfSk084HTqfEg/files/2024/07/Banner-Vidanitaxa-moi-den.jpg" alt=""/>
+                    </a>
+                    <a>
+                        <img src="https://media.baotintuc.vn/Upload/QKrAM3u3JmfSk084HTqfEg/files/2024/07/Banner-Vidanitaxa-moi-den.jpg" alt=""/>
+                    </a>
+                </div>
                 {/*<FormSearch></FormSearch>*/}
                 {/*<div className="day">Chủ Nhật, 07/05/2023, 15:50:51 GMT+7</div>*/}
                 <a href="http://localhost:3000/history" className='history-icon'>
