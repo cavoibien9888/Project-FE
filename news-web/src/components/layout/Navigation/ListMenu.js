@@ -23,10 +23,10 @@ const ListMenu = () => {
     return (
         <Fragment>
             <ul className='menu'>
-                <Link to="/" id='home-icon'>
+                <a href="/" id='home-icon'>
                     {/* <img src={ HomeIcon } alt='Trang Chủ'/> */}
                     <i class="fa-solid fa-house"></i>
-                </Link>
+                </a>
                 {listCategory.map(category => (
                     <li 
                         className='dropdown'

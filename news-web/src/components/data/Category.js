@@ -444,7 +444,7 @@ const categorys = [
             },
             {
                 id: 4,
-                name: 'Tây Bắc - Tây Nguyên - Tây Nam bộ',
+                name: 'TB - TN - TNB',
                 link: "/tay-bac-tay-nguyen-tay-nam-bo",
                 rssLink: "https://baotintuc.vn/tay-bac-tay-nguyen-tay-nam-bo.rss",
             }

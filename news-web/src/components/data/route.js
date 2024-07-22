@@ -42,7 +42,7 @@ const route = [
         dropdown: [
             {
                 id: 1,
-                name: 'Phân tích-Nhận định',
+                name: 'Phân tích - Nhận định',
                 link: "/phan-tich-nhan-dinh",
                 rssLink: "https://baotintuc.vn/phan-tich-nhan-dinh.rss",
             },
@@ -444,7 +444,7 @@ const route = [
             },
             {
                 id: 4,
-                name: 'Tây Bắc - Tây Nguyên - Tây Nam bộ',
+                name: 'TB - TN - TNB',
                 link: "/tay-bac-tay-nguyen-tay-nam-bo",
                 rssLink: "https://baotintuc.vn/tay-bac-tay-nguyen-tay-nam-bo.rss",
             }

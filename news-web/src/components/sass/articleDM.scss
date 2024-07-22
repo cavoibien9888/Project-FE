@@ -1,19 +1,38 @@
 @import '../../App.scss';
+@import './styles.scss';
+
+.articleBlk {
+  cursor: pointer;
+}
 
 .articleDM {
   //padding: 0 00px;
-  margin-top: 20px;
-  margin-left: 23px;
+  // margin-top: 20px;
+  // margin-left: 23px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  //grid-gap: 0px;
+  column-gap: 8%;
+  row-gap: 3%;
+}
 
+.articleBlk {
+  width: 300px;
+  height: auto;
+  &-img {
+    width: 300px;
+    height: 300px;
+  }
+  &-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 .articles {
   margin-top: 10px;
-  height: 270px;
   width: 300px;
+  height: 270px;
 
   .imga{
     width: 300px;

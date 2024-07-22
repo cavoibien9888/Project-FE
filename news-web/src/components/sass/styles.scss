@@ -4,6 +4,8 @@
 $white: #fff;
 $black: #000;
 $red: #ed1b24;
+$gray1: #f0f0f0;
+
 
 @mixin fullScreen($fullScreen) {
     @if $fullScreen == "fullScreen" {
@@ -31,6 +33,12 @@ $red: #ed1b24;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    @if $positionBlk == "positionSbS" {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
     }
 
     @if $positionBlk == "positionCC" {

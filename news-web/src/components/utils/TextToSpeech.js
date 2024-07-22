@@ -84,7 +84,7 @@ const TextToSpeech = ({ text }) => {
         <div>
             <div className="Voice">
             <label className="layble">
-                Voice:
+                Giọng nói:
                 <select value={voice?.name} onChange={handleVoiceChange}>
                     {window.speechSynthesis.getVoices().map((voice) => (
                         <option key={voice.name} value={voice.name}>
@@ -99,7 +99,7 @@ const TextToSpeech = ({ text }) => {
             <div className="condition">
 
             <label>
-                Pitch:
+                Giọng âm:
                 <input
                     type="range"
                     min="0.5"
@@ -113,7 +113,7 @@ const TextToSpeech = ({ text }) => {
             <br />
 
             <label>
-                Speed:
+                Tốc độ:
                 <input
                     type="range"
                     min="0.5"
@@ -125,7 +125,7 @@ const TextToSpeech = ({ text }) => {
             </label>
             <br />
             <label>
-                Volume:
+                Âm lượng:
                 <input
                     type="range"
                     min="0"
@@ -139,9 +139,9 @@ const TextToSpeech = ({ text }) => {
             <br />
             </div>
             <div className="buttonVoi">
-            <button onClick={handlePlay} className="play">{isPaused ? "Resume" : "Play"}</button>
-            <button onClick={handlePause} className="pause">Pause</button>
-            <button onClick={handleStop} className="stop">Stop</button>
+            <button onClick={handlePlay} className="play">{isPaused ? "Tiếp tục" : "Chơi tiếp"}</button>
+            <button onClick={handlePause} className="pause">Tạm ngừng</button>
+            <button onClick={handleStop} className="stop">Dừng</button>
             </div>
         </div>
     );

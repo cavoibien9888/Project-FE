@@ -12,7 +12,7 @@ const AarticleDm = ({ feed }) => {
     const article = {
         ...feed,
         // id: id,
-        id: Math.random().toString(36).substring(2, 9),
+        id: Math.random().toString(36).substring(3, 12),
         isViewed: false,
     };
     // console.log(article);
@@ -50,15 +50,16 @@ const AarticleDm = ({ feed }) => {
 
     return (
         // <div>
-        <div className="article" onClick={() => handleButtonClick(getSlugFromLink(link))}>
+        <div className="articleBlk" onClick={() => handleButtonClick(getSlugFromLink(link))}>
             {/* <a href={link}>
             </a> */}
             <img
                 src={image}
                 alt=""
+                className='articleBlk-img'
             />
-            {cate}
-            <h2 className='title'>{title}</h2>
+            {/* {cate} */}
+            <p className='articleBlk-title'>{title}</p>
             <span className='date'>{updated}</span>
             {/* <button className='date' onClick={() => handleButtonClick(getSlugFromLink(link))}>Chi tiết</button> */}
             {/* <button className='date'>Chi tiết</button> */}

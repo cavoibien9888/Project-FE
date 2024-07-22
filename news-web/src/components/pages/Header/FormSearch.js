@@ -14,6 +14,12 @@ const FormSearch = ({ onSearch }) => {
         onSearch(searchTerm);
     };
 
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <div id='header_search-blk'>
             <input
@@ -22,9 +28,10 @@ const FormSearch = ({ onSearch }) => {
                 placeholder="Tìm kiếm"
                 value={searchTerm}
                 onChange={handleInputChange}
+                onKeyPress={handleKeyPress}
             />
-            <div id='header_search-icon'>
-                <i className="fa-solid fa-magnifying-glass" onClick={handleSearch}></i>
+            <div id='header_search-icon' onClick={handleSearch} aria-label="Tìm kiếm">
+                <i className="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     );

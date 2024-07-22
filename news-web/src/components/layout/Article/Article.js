@@ -1,76 +1,87 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
-// files & pages
 import { addHistory } from '../../store/Action';
 import '../../sass/article.scss';
-// import { addComment } from '../../store/Action';
+import { format, parseISO } from 'date-fns';
+import vi from 'date-fns/locale/vi';
 
 const Article = ({ feed }) => {
-    const { title, image, link, updated, description, cate } = feed;
-    // const article = feed;
+    const { title, image, link, updated, pubDate, cate } = feed;
+
     const article = {
         ...feed,
-        // id: id,
         id: Math.random().toString(36).substring(2, 9),
         isViewed: false,
     };
-    // console.log(article);
 
-    // get slug for detail article
-    function getSlugFromLink(link,cate) {
+    const getSlugFromLink = (link, cate) => {
         const lastSlashIndex = link.lastIndexOf('/');
-        const slug =cate+"/"+ link.substring(lastSlashIndex + 1);
-        console.log("slug at article",slug);
-        return slug;
-    }
+        return `${cate}/${link.substring(lastSlashIndex + 1)}`;
+    };
 
-    // const slugLink = getSlugFromLink(link);
+    const slug = getSlugFromLink(link, cate);
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
-    // lich su xem
     const historyRedux = useSelector(state => state.root.history);
-    function handelAddHistory(article) {
+
+    const handleAddHistory = (article) => {
         article.isViewed = true;
-        // Kiểm tra xem bài báo có cùng id đã tồn tại trong danh sách lịch sử chưa
-        const existingArticle = historyRedux.find(item => item.title === article.title);
-        // const existingArticle = historyRedux.find(item => item.id === article.id);
+        const existingArticle = historyRedux.find(item => item.id === article.id);
         if (!existingArticle) {
             dispatch(addHistory(article));
         }
-    }
+    };
 
-    const handleButtonClick = (link, cate) => {
-        handelAddHistory(article);
-
-        const slug = getSlugFromLink(link, cate);
-        console.log("slug at change url", slug);
+    const handleButtonClick = () => {
+        handleAddHistory(article);
         navigate(slug);
     };
 
+    // Định dạng ngày giờ
+    const formatDate = (dateString) => {
+        try {
+            const date = new Date(dateString);
+            if (isNaN(date.getTime())) {
+                throw new Error('Invalid date');
+            }
+            return {
+                date: format(date, 'dd/MM/yyyy', { locale: vi }),
+                time: format(date, 'HH:mm', { locale: vi }),
+            };
+        } catch (error) {
+            console.error('Error formatting date:', error);
+            return {
+                date: dateString,
+                time: '', // Không có thời gian khi có lỗi
+            };
+        }
+    };
+
+    const { date: formattedPubDate, time: formattedPubTime } = formatDate(pubDate);
+    const { date: formattedUpdatedDate, time: formattedUpdatedTime } = formatDate(updated);
 
     return (
-        // <div>
-        <div className="article" onClick={() => handleButtonClick(getSlugFromLink(link),cate)}>
-            {/* <a href={link}>
-            </a> */}
-            <img
-                src={image}
-                alt=""
-            />
-            {cate}
-            <h2 className='title'>{title}</h2>
-            <span className='date'>{updated}</span>
-            {/* <button className='date' onClick={() => handleButtonClick(getSlugFromLink(link))}>Chi tiết</button> */}
-            {/* <button className='date'>Chi tiết</button> */}
-            {/* <div className='decription' dangerouslySetInnerHTML={{ __html: description }}></div> */}
-            {/* <span className='description'>{description}</span> */}
-
+        <div className="article" onClick={handleButtonClick}>
+            <div className='article-blks'>
+                <div className='article_blocks'>
+                    <img
+                        src={image}
+                        alt="ảnh báo"
+                        className='article_blocks-img'
+                    />
+                </div>
+                <div className='article_text'>
+                    <p className='article_title1'>{title}</p>
+                    <div className='article_dateTime'>
+                        <p className='article_date'>{formattedPubDate}</p>
+                        {/* <p className='article_time'>{formattedPubTime}</p> */}
+                    </div>
+                </div>
+                <span className='date'>{formattedUpdatedDate} {formattedUpdatedTime}</span>
+            </div>
         </div>
-
     );
 };
 
