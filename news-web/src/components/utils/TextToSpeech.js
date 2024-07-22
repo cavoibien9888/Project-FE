@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./speed.css"
+import "../sass/speed.scss"
 
 const TextToSpeech = ({ text }) => {
     const [isPaused, setIsPaused] = useState(false);
@@ -83,9 +83,9 @@ const TextToSpeech = ({ text }) => {
     return (
         <div>
             <div className="Voice">
-            <label className="layble">
+            <label className="labelBlk">
                 Giọng nói:
-                <select value={voice?.name} onChange={handleVoiceChange}>
+                <select value={voice?.name} onChange={handleVoiceChange} className="select-language">
                     {window.speechSynthesis.getVoices().map((voice) => (
                         <option key={voice.name} value={voice.name}>
                             {voice.name}
@@ -97,51 +97,50 @@ const TextToSpeech = ({ text }) => {
             <br />
             </div>
             <div className="condition">
-
-            <label>
-                Giọng âm:
-                <input
-                    type="range"
-                    min="0.5"
-                    max="2"
-                    step="0.1"
-                    value={pitch}
-                    onChange={handlePitchChange}
-                />
-            </label>
-
-            <br />
-
-            <label>
-                Tốc độ:
-                <input
-                    type="range"
-                    min="0.5"
-                    max="2"
-                    step="0.1"
-                    value={rate}
-                    onChange={handleRateChange}
-                />
-            </label>
-            <br />
-            <label>
-                Âm lượng:
-                <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.1"
-                    value={volume}
-                    onChange={handleVolumeChange}
-                />
-            </label>
-
-            <br />
+                <label className="condition-text">
+                    Giọng âm:
+                    <input
+                        type="range"
+                        min="0.5"
+                        max="2"
+                        step="0.1"
+                        value={pitch}
+                        onChange={handlePitchChange}
+                        className="input-select"
+                    />
+                </label>
+                <br/>
+                <label className="condition-text">
+                    Tốc độ:
+                    <input
+                        type="range"
+                        min="0.5"
+                        max="2"
+                        step="0.1"
+                        value={rate}
+                        onChange={handleRateChange}
+                        className="input-select"
+                    />
+                </label>
+                <br />
+                <label className="condition-text">
+                    Âm lượng:
+                    <input
+                        type="range"
+                        min="0"
+                        max="1"
+                        step="0.1"
+                        value={volume}
+                        onChange={handleVolumeChange}
+                        className="input-select"
+                    />
+                </label>
+                <br />
             </div>
             <div className="buttonVoi">
-            <button onClick={handlePlay} className="play">{isPaused ? "Tiếp tục" : "Chơi tiếp"}</button>
-            <button onClick={handlePause} className="pause">Tạm ngừng</button>
-            <button onClick={handleStop} className="stop">Dừng</button>
+                <button onClick={handlePlay} className="play">{isPaused ? "Tiếp tục" : "Chơi tiếp"}</button>
+                <button onClick={handlePause} className="pause">Tạm ngừng</button>
+                <button onClick={handleStop} className="stop">Dừng</button>
             </div>
         </div>
     );

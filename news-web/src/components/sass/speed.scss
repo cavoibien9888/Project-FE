@@ -40,3 +40,31 @@
 /*.layble{*/
 /*    width: 100px;*/
 /*}*/
+
+.labelBlk {
+    font-size: 20px;
+}
+
+.select-language {
+    margin-left: 15px;
+}
+
+.condition-text {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-select {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.condition {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+}
