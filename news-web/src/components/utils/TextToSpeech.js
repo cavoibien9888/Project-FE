@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../sass/speed.scss"
+
+
+import "../sass/speed.scss";
 
 const TextToSpeech = ({ text }) => {
     const [isPaused, setIsPaused] = useState(false);
