@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./speed.css"
+
+import "../sass/speed.scss"
 
 const TextToSpeech = ({ text }) => {
     const [isPaused, setIsPaused] = useState(false);
@@ -83,7 +84,8 @@ const TextToSpeech = ({ text }) => {
     return (
         <div>
             <div className="Voice">
-            <label className="layble">
+
+            <label className="labelBlk">
                 Giọng nói:
                 <select value={voice?.name} onChange={handleVoiceChange}>
                     {window.speechSynthesis.getVoices().map((voice) => (
