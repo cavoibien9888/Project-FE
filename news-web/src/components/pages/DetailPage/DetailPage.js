@@ -8,6 +8,7 @@ import { fetchRssFeed, getRssFeedDetail } from '../../utils/RssFeed';
 import Navigation from '../../layout/Navigation/Navigation';
 import TextToSpeech from '../../utils/TextToSpeech';
 import Article from '../../layout/Article/Article';
+import Footer from '../Footer/Footer';
 // import TextToSpeechWrapper from "../util/TextToSpeechWrapper";
 
 
@@ -88,55 +89,59 @@ const DetailPage = () => {
 
     return (
         <div>
-
-            <Header></Header>
-            <Navigation></Navigation>
-
-            <TextToSpeech text={content.bodys } />
-            <div className={"content-main"}>
-                <div className={'content-right'}>
-                    <div className={'article__title cms-title'}>{content.title}</div>
-                    <div className={'article__sapo cms-desc'}>{content.sapo}</div>
-                    <div className={'article__body cms-body'} dangerouslySetInnerHTML={{ __html: content.body }}></div>
-                    <div className={'article__tag'} dangerouslySetInnerHTML={{ __html: content.tag }}></div>
-                </div>
-                <div className={'content-left'}>
-                    <div className={'sideBar'}>
-                        {firstSection.map((item, index) => (
-                          <div key={index}>
-                              <Article feed={item}></Article>
-                          </div>
-                        ))}
+            <Header/>
+            <div id='detailPage'>
+                <TextToSpeech text={content.bodys } id='textvoice'/>
+                <div className={"content-main"}>
+                    <div className={'content-right'}>
+                        <div className={'article__title cms-title'}>{content.title}</div>
+                        <div className={'article__sapo cms-desc'}>{content.sapo}</div>
+                        <div className={'article__body cms-body'} dangerouslySetInnerHTML={{ __html: content.body }}></div>
+                        <div className={'article__tag'} dangerouslySetInnerHTML={{ __html: content.tag }}></div>
+                    </div>
+                    <div className={'content-left'}>
+                        <div className={'sideBar'}>
+                            {firstSection.map((item, index) => (
+                                <div key={index}>
+                                    <Article feed={item}></Article>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
+                <div className={'title-comment'}> Bình Luận</div>
+                <div className={'comment'}>
+                    {/*Hiển thị danh sách bình luận*/}
+                    {filteredComments.map((comment, index) => (
+                        <div className='comment-block'>
+                            <div key={`${comment.id}-${index}`} className='comment_blk-text'>
+                                <p className='name-text'>{comment.name}</p>
+                                <p className='comments-text'>{comment.comment}</p>
+                            </div>
+                        </div>
+                    ))}
+
+                    {/* Form nhập bình luận */}
+                    <form onSubmit={submitComment}>
+                        <div className='input-name-blk'>
+                            <label className={"name"} htmlFor="name">Tên của bạn:</label>
+                            <input className={"text-name"} type="text" id="name-input" name="name"/><br/>
+                        </div>
+
+                        <div>
+                            <label className={"comments"} htmlFor="comment">Bình luận:</label>
+                            <textarea className={"text"} id="comment" name="comment"></textarea><br/>
+                        </div>
+
+                        <button className="button" type="submit">Gửi bình luận</button>
+                    </form>
+                </div>
+
+
+                {/*<div className={"mgbox"} dangerouslySetInnerHTML={{__html: content.mgbox}}></div>*/}
+
             </div>
-
-            <div className={'title-comment'}> Bình Luận</div>
-
-            <div className={'comment'}>
-                {/*Hiển thị danh sách bình luận*/}
-                {filteredComments.map((comment, index) => (
-                  <div key={`${comment.id}-${index}`}>
-                      <h4>{comment.name}:</h4>
-                      <p>{comment.comment}</p>
-                  </div>
-                ))}
-
-                {/* Form nhập bình luận */}
-                <form onSubmit={submitComment}>
-                <label className={"name"} htmlFor="name">Tên của bạn:</label>
-                    <input className={"text-name"} type="text" id="name" name="name"/><br/>
-
-                    <label className={"comments"} htmlFor="comment">Bình luận:</label>
-                    <textarea className={"text"} id="comment" name="comment"></textarea><br/>
-
-                    <button className="button" type="submit">Gửi bình luận</button>
-                </form>
-            </div>
-
-
-            {/*<div className={"mgbox"} dangerouslySetInnerHTML={{__html: content.mgbox}}></div>*/}
-
+            <Footer/>
         </div>
 
     );
