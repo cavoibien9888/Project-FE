@@ -1,0 +1,85 @@
+@import '../../App.scss';
+@import './styles.scss';
+
+.article {
+  @include positionBlk("positionSS");
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  // height: 300px;
+  // margin-top: 40px;
+
+  // img {
+  //   width: 300px;
+  //   height: 180px;
+  // }
+
+  a {
+    width: 100%;
+    color: $text-black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: block;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .title {
+    width: max-content;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .decription {
+    margin-top: 80px;
+  }
+
+  &-title {
+    cursor: pointer;
+  }
+
+  &-title:hover {
+    color: $red;
+  }
+
+  &_blocks { 
+    &-img {
+      @include fullScreen("fullScreen");
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  &_text {
+    margin-left: 20px;
+  }
+
+  &_title1 {
+    font-size: 24px;
+  }
+
+  &-blks {
+    @include positionBlk("positionSS");
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.article_dateTime {
+  @include positionBlk("positionSbC");
+  flex-direction: row;
+}
+
+.proposed-title {
+  font-size: 18px;
+}
+
+.article_text {
+  width: 100%;
+}

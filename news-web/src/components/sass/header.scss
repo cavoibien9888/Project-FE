@@ -1,0 +1,163 @@
+@import '../../App.scss';
+@import './styles.scss';
+
+#header {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    &_coSe, &_img, &_nav, &_eventDate {
+        // @include fullScreen("fullWidth");
+        @include paddingBar("paddingRL");
+    }
+    &_coSe {
+        @include fullScreen("fullWidth");
+        background-color:$white;
+        border-bottom: 2px solid #ed1b24;
+        &-blk {
+            @include fullScreen("fullScreen");
+            @include positionBlk("positionSbC");
+            flex-direction: row;
+            padding: 10px 0;
+        }
+    }
+    &_contacts {
+        @include positionBlk("positionCC");
+        flex-direction: row;
+        column-gap: 35px;
+        &-phone, &-email{
+            @include positionBlk("positionCC");
+            flex-direction: row;
+        }
+    }
+    &_seUser {
+        @include positionBlk("positionCC");
+        flex-direction: row;
+        column-gap: 25px;
+    }
+    &_search {
+        @include positionBlk("positionCC");
+        width: 18rem;
+        height: 2rem;
+        flex-direction: row;
+        border: 1.5px #000 solid;
+        border-radius: 3px;
+        // padding-right: 5px;
+        &-blk {
+            @include fullScreen("fullScreen");
+            @include positionBlk("positionCC");
+        }
+        &-input {
+            @include fullScreen("fullScreen");
+            font-size: 16px;
+            padding-left: 10px;
+            border: none;
+            outline: none;
+        }
+        &-icon i {
+            font-size: 18px;
+            padding: 3px;
+        }
+    }
+    &_img {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSC");
+    }
+    &_nav {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionCC");
+        background-color: $red;
+    }
+    &_list {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSbC");
+        margin: 18px 0;
+        flex-direction: row;
+    }
+    &_account {
+        @include positionBlk("positionCC");
+        width: auto;
+        height: 2rem;
+    }
+    &_eventDate {
+        @include fullScreen("fullWidth");
+        &-blk {
+            @include fullScreen("fullWidth");
+            background-color: #f0f0f0;
+            padding: 8px 0;
+        }
+    }
+    &_event {
+        &-text {
+           font-size: 18px;
+           font-weight: 600;
+           text-transform: uppercase;
+           font-family: "Roboto", sans-serif;
+        }
+    }
+    &_blk {
+        @include fullScreen("fullWidth");
+        @include positionBlk("positionSbC");
+        flex-direction: row;
+        padding: 0 2%;
+    }
+}
+
+.header {
+    &_contact-text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #515151;
+    }
+    &-logo {
+        width: 12rem;
+        height: 5rem;
+        margin: 25px 0 35px 0;
+    }
+    &_title-text {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &_btn-signin {
+        @include fullScreen("fullHeight");
+        @include positionBlk("positionCC");
+        color: $black;
+        border: 1.5px #000 solid;
+        border-radius: 5px;
+        padding: 0 1rem;
+        padding-bottom: 3px;
+        &:hover {
+            color: $white;
+            background-color: $red;
+            border: 1.5px $red solid;
+        }
+    }
+    &_email-icon, &_phone-icon {
+        width: 20px;
+        height: auto;
+        margin-right: 7px;
+        text-align: center;
+    }
+}
+
+.history {
+    &-icon {
+        @include positionBlk("positionCC");
+        flex-direction: row;
+        & i {
+            font-size: 22px;
+            margin-left: 10px;
+        }
+    }
+    &-icon:hover {
+        color: #000;
+    }
+    &-text {
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}
