@@ -49,7 +49,7 @@ const DetailPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const dataArticle = await fetchRssFeed('https://baotintuc.vn/tin-moi-nhat.rss');
+                const dataArticle = await fetchRssFeed(`https://baotintuc.vn/${cate}.rss`);
                 setDataArticle(dataArticle);
 
             } catch (error) {

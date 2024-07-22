@@ -1,9 +1,9 @@
 @import "../../App.scss";
 
 .header {
-    height: 80px;
+    height: 90px;
     width: 100%;
-    background-color: $primary-color;
+    background-color: white;
     padding: 0 40px;
     display: flex;
     align-items: center;
@@ -11,6 +11,10 @@
 
     .logo {
         cursor: pointer;
+        img{
+            width: 233px;
+            height: 105px;
+        }
     }
 
     .search {

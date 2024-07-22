@@ -46,13 +46,13 @@ const Article = ({ feed }) => {
 
         const slug = getSlugFromLink(link, cate);
         console.log("slug at change url", slug);
-        navigate(slug);
+        window.location.href = `http://localhost:3000/${slug}`;
     };
 
 
     return (
         // <div>
-        <div className="article" onClick={() => handleButtonClick(getSlugFromLink(link),cate)}>
+        <div className="article" onClick={() => handleButtonClick(link,cate)}>
             {/* <a href={link}>
             </a> */}
             <img
