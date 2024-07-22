@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import "../sass/speed.scss"
 
 const TextToSpeech = ({ text }) => {
@@ -83,6 +84,7 @@ const TextToSpeech = ({ text }) => {
     return (
         <div>
             <div className="Voice">
+
             <label className="labelBlk">
                 Giọng nói:
                 <select value={voice?.name} onChange={handleVoiceChange}>
